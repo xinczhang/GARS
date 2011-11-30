@@ -1,0 +1,361 @@
+/* reset default styles */
+ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+.borderVisible {
+	border: 1px solid gray;
+}
+body
+{
+    font-family: Rockwell, Verdana, Arial, SunSans-Regular, Sans-Serif;
+    font-size: .95em;
+    /*color: #0D5E96;*/
+	color: black;
+    font-size: 12px; 
+    background-color: #dbeddc;
+}
+
+#mainContainer {	
+    width: 1000px;
+    margin: 5px auto;
+}
+#header
+{
+    background-color: #93d694;
+    margin: 0px;
+    padding: 5px 8px;
+    color: white;
+	overflow: hidden
+}
+
+#header h1 
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+	#border: 1px solid red;
+}
+#header #searchQuery {
+	color: #AAA;
+	height: 23px;
+	margin-left: 200px;
+}
+#header #name {
+	float:right; 
+	padding: 7px 10px;
+	margin: 0px 0px;
+	font-weight: bold;
+	color: white;
+}
+#header #navBar 
+{
+    float: right;
+    margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+#navBar li {
+	float:left;
+}
+
+
+#content
+{
+    overflow: hidden;
+    background-color: white;
+    padding: 10px;
+    min-height: 500px;
+}
+
+#loginArea
+{
+    width:300px;
+	border-left:1px solid #eeeeee;
+	border-right:1px solid #eeeeee;
+	background-color: White;
+	float:left;
+    margin-right: 0px;
+}
+#loginArea table
+{
+	margin: auto auto;
+}
+#loginButton
+{
+	width: 150px;
+	height: 25px;
+	float: right;
+}
+#RegisterArea
+{
+    width: 100%;
+    margin-left: 300px;
+	height:500px;
+	border-right:1px solid #eeeeee;
+	background-color:white;
+}
+
+#footer
+{
+	clear: both;
+    margin: 5px;
+	font-size: 12px;
+    text-align: center;
+    color: #5c5c5b;
+}
+
+
+
+
+/* UPLOAD */
+#uploadButton
+{
+	width: 150px;
+	height: 25px;
+}
+#uploadErrorMsgListTitle
+{
+	margin: 0px;
+	font-size: 18px;
+	margin-bottom: 5px;	
+}
+#uploadErrorMsgList 
+{
+	padding: 0px;
+	margin: 0px;
+	background-color: white;
+	list-style: none;
+}
+#uploadErrorMsgList li {
+	border: 1px solid gray;
+	padding: 5px;
+}
+/* end UPLOAD */
+
+/* applications */
+/* filter  */
+#filterArea 
+{
+	width: 150px;
+	float: right
+}
+#filterAreaTitle {
+	font-size: 18px;
+	margin: 0px;
+	padding: 0px;
+}
+#filter_accordion ul {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+/* END filter*/
+
+/* controlArea */
+#toolbar {
+	overflow: hidden;
+/*	border: 1px solid #9cd171 */
+}
+#selectRadios, #whatever {
+	float: left;
+	#border: 1px solid red;
+}
+
+#selectorBox {
+	border: 1px solid #9cd171;
+	float: left;
+}
+.dialog {
+	display: none;
+	margin-top: 5px;
+	padding: 5px;
+    background-color: #c7e7ad;
+	position: absolute;
+	max-height: 500px;
+}
+
+.dialogControls {
+	margin-top: 5px;
+	overflow: hidden;
+}
+.dialogControls .controls {
+	float: left;
+	margin-right: 30px;
+}
+.dialogControls .okCancelControls {
+	float: right;
+}
+#pagingNavBar {
+	float: right;
+}
+/* END controlArea */
+
+/* display applications */
+#displayAppsArea
+{
+	margin-top: 5px;
+	padding-top: 5px;
+	border-top:1px solid #DEDEDE;
+}
+.appHeaderTitle {
+	width: 180px;
+	float: left;
+}
+.appName {
+	color: #93d694;
+	font-weight: bold;
+	display: inline-block;
+}
+.appPDFLink {
+	color: #6e6f6d;
+}
+.appWrapper{
+	clear: both;
+	#border: 1px solid purple;
+	overflow: hidden;
+}
+.appControls {
+	float: left;
+	margin-right: 6px;
+	overflow: hidden;
+	#border: 1px solid green;
+}
+.appControls .expandAppBtn, .heading .expandAppBtn, .appControls .editCommentBtn {
+	padding:0px; 
+	margin:0px; 
+	width:15px;
+	height:15px;
+	border: none;
+}
+.appArea {
+	overflow: hidden;
+	#border: 1px solid red;
+}
+.appHeader {
+	padding: 2px;
+	#border: 1px solid green;
+}
+.appContent {
+	padding: 0px;
+	display: none;
+}
+/* END display applications
+
+/* END view applications */
+
+
+/* APP style */
+.tableStyle {
+	#border: 1px solid #93d694;
+	width: 100%;
+	color: #333;
+}
+.tableStyle th {
+	color: black;
+}
+.tableStyle tr {
+	padding: 5px;
+}
+.tableStyle tr td:nth-child(odd) {
+	color: black;
+}
+.tableStyle tr:nth-child(even) {
+	background-color:#FFF;
+}
+.tableStyle tr:nth-child(odd) {
+	background-color:#dbeddc;
+}
+/* APP style */
+
+
+/* CHAIR page style */
+#sidebar {
+	#border: 1px solid red;
+	float: left;
+	width: 15%;
+	height: 100%;
+	margin-right: 1%;
+}
+#sidebar img {
+	width: 100%;
+	height: 200;
+}
+#sidebar ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+#sidebar ul a {
+	width: 100%;
+	display: block;
+	text-align: center;
+    background-color: #93d694;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	padding: 5px 0px;
+}
+#sidebar ul a:hover {
+	background-color: #09F;
+}
+#sidebar img {
+	display: block;
+	margin-bottom: 5px;
+}
+
+#sidebar ul #currentTab {
+	background-color: #09F;
+}
+.tab {
+	width: 84%;
+	float: left;
+	#border: 1px solid green;
+}
+
+/* Round schedule tab */
+.roundHeader {
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+}
+ul.roundContent {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+ul.roundContent li {
+	#border: 1px solid red;
+}
+.fieldName {
+	width: 200px;
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

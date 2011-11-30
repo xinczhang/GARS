@@ -1,0 +1,429 @@
+generated using partial template:<br/>
+OTS ID: <%= official_test_score.id %>
+			<!-- Test Scores -->
+
+			<div style="display:block" id="app_test_scores" class="section">
+
+
+
+				<div class="header">
+
+				  <h2>Test Scores</h2>
+
+				</div>
+
+				<!-- GRE Scores -->
+
+				<div class="content">
+
+					<h3>GRE Scores</h3>
+
+					<table class="application">
+
+						<tbody><tr>
+
+							<td class="fieldHead">Verbal:</td>
+
+							<td><%=official_test_score.verbal%></td>
+
+							<td class="fieldHead2">Verbal Percentile:</td>
+
+							<td><%=official_test_score.verbalPercentile%></td>
+
+						</tr>
+
+						<tr>
+
+							<td class="fieldHead">Quantitative:</td>
+
+							<td><%=official_test_score.quantitative%></td>
+
+							<td class="fieldHead2">Quantitative Percentile:</td>
+
+							<td><%=official_test_score.quantitativePercentile%></td>
+
+						</tr><tr>
+
+							<td class="fieldHead">Analytical:</td>
+
+							<td><%=official_test_score.analytical%></td>
+
+							<td class="fieldHead2">Analytical Percentile:</td>
+
+							<td><%=official_test_score.analyticalPercentile%></td>
+
+						</tr>
+
+							
+
+						<tr>	
+
+							<td class="fieldHead">Subject Test Taken:</td>
+
+							<td><%=official_test_score.subjectName%></td>
+
+							<td class="fieldHead2">Subject Score:</td>
+
+							<td><%=official_test_score.subject%></td>
+
+						</tr>
+
+					</tbody></table>
+
+					  
+
+				</div>
+
+				<!-- TOEFL Scores -->
+
+				<div class="content">
+
+					<h3>TOEFL Scores</h3>
+
+					<table class="application">
+
+						<tbody><tr>
+
+							<td class="fieldHead">IBT Total Score:</td>
+
+							<td><%=official_test_score.toeflTotal%></td>
+
+						</tr>
+
+						<tr>
+
+							<td class="fieldHead">IBT Reading:</td>
+
+							<td><%=official_test_score.toeflReading%></td>
+
+							<td class="fieldHead2">IBT Speaking:</td>
+
+							<td><%=official_test_score.toeflSpeaking%></td>
+							
+							<td class="fieldHead2">IBT Writing:</td>
+
+							<td><%=official_test_score.toeflWriting%></td>
+
+						</tr>
+						
+						<tr>
+
+							<td class="fieldHead">TOEFL Listening:</td>
+
+							<td><%=official_test_score.toeflListening%></td>
+
+						</tr>
+
+					</tbody></table>
+
+					  
+
+				</div>
+
+				
+
+				<!-- TSE -->
+
+				<div class="content">
+
+					<h3>TSE (Test of Spoken English)</h3>
+
+					<table class="application">
+
+						<tbody><tr>
+
+							<td class="fieldHead">TSE:</td>
+
+							<td>110</td>
+
+						</tr>
+
+					</tbody></table>
+
+					  
+
+				</div>
+
+				
+
+				<!-- IELTS -->
+
+				<div class="content">
+
+					<h3>IELTS</h3>
+
+					<table class="application">
+
+						<tbody><tr>
+
+							<td class="fieldHead">IELTS:</td>
+
+							<td>7.0</td>
+
+						</tr>
+
+					</tbody></table>
+
+					  
+
+				</div>
+
+			</div>
+
+			
+
+			
+
+			<!--Acdemic Records -->
+
+			<div style="display:block" id="app_test_scores" class="section">
+
+
+
+				<div class="header">
+
+				  <h2>Acdemic Records</h2>
+
+				</div>
+
+				<!-- Courses Taken -->
+
+				<div class="content">
+
+					<h3>Courses Taken</h3>
+
+					<table id="undergrad_gpa" class="application" border="1">
+
+						<tbody><tr>
+
+							<th>Course Title</th>
+
+							<th>Grad or Undergrad</th>
+
+							<th>Instructor</th>
+
+							<th>Years Taken</th>
+
+							<th>Grading Scale</th>
+
+							<th>Grade</th>
+
+							<th>USB Equivalent 1</th>
+
+						</tr>
+
+						<tr>
+
+							<td>Theory of Computation</td>
+
+							<td></td>
+
+							<td></td>
+
+							<td></td>
+
+							<td>4.0 Point Scale</td>
+
+							<td>4</td>
+
+							<td></td>
+
+						</tr>
+
+						<tr>
+
+							<td>Algorithms</td>
+
+							<td></td>
+
+							<td></td>
+
+							<td></td>
+
+							<td>4.0 Point Scale</td>
+
+							<td>4</td>
+
+							<td></td>
+
+						</tr>
+
+						<tr>
+
+							<td>Compiler</td>
+
+							<td></td>
+
+							<td></td>
+
+							<td></td>
+
+							<td>4.0 Point Scale</td>
+
+							<td>4</td>
+
+							<td></td>
+
+						</tr>
+
+						<tr>
+
+							<td>Operating System</td>
+
+							<td></td>
+
+							<td></td>
+
+							<td></td>
+
+							<td>4.0 Point Scale</td>
+
+							<td>4</td>
+
+							<td></td>
+
+						</tr>
+
+					</tbody></table>
+
+					  
+
+				</div>
+
+				<!--Undergrad GPA-->
+
+				<div class="content">
+
+					<h3>Undergrad GPA</h3>
+
+					<p>This is applicant's undergrad GPA at University of Mumbai based on a 4.0 point scale</p>
+
+					<table class="application">
+
+						<tbody><tr>
+
+							<td class="fieldHead">Undergrad Rank:</td>
+
+							<td>11</td>
+
+						</tr>
+
+						<tr>
+
+							<td class="fieldHead">Out of:</td>
+
+							<td>127</td>
+
+						</tr>
+
+					</tbody></table>
+
+					<table id="courses" class="application" border="1">
+
+						<tbody><tr>
+
+							<th>Year</th>
+
+							<th>Year 1</th>
+
+							<th>Year 2</th>
+
+							<th>Year 3</th>
+
+							<th>Year 4</th>
+
+							<th>Year 5</th>
+
+							<th>Overall</th>
+
+						</tr>
+
+						<tr>
+
+							<td>GPA</td>
+
+							<td>4.0</td>
+
+							<td>4.0</td>
+
+							<td>4.0</td>
+
+							<td>4.0</td>
+
+							<td></td>
+
+							<td>4.0</td>
+
+						</tr>
+
+					</tbody></table>
+
+					  
+
+				</div>
+
+				
+
+				<!--Grad GPA-->
+
+				<div class="content">
+
+					<h3>Grad GPA</h3>
+
+					<p>This is applicant's grad GPA at University of Florida based on a 4.0 point scale</p>
+
+					<table class="application">
+
+						<tbody><tr>
+
+							<td class="fieldHead">Grad Rank:</td>
+
+							<td></td>
+
+						</tr>
+
+						<tr>
+
+							<td class="fieldHead">Out of:</td>
+
+							<td></td>
+
+						</tr>
+
+					</tbody></table>
+
+					<table id="grad_gpa" class="application" border="1">
+
+						<tbody><tr>
+
+							<th>Year</th>
+
+							<th>Year 6</th>
+
+							<th>Year 7</th>
+
+							<th>Overall</th>
+
+						</tr>
+
+						<tr>
+
+							<td>GPA</td>
+
+							<td>4.0</td>
+
+							<td>4.0</td>
+
+							<td>4.0</td>
+
+						</tr>
+
+					</tbody></table>
+
+					  
+
+				</div>
+
+			</div>
+
+			

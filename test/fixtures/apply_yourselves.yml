@@ -1,0 +1,136 @@
+one:
+ id: 1
+ submission_date: 2011-11-11 11:11:11
+ applicant_client_id: 1
+ last_name: "Perlis"
+ first_name: "Alan"
+ middle_name: "J."
+ gender: 0
+ birth_month: 11
+ birth_day: 11
+ birth_year: 1989
+ citizenship: "US"
+ ethnicity: "Black"
+ race: "Black or African American"
+ permanent_resident: 0
+ phone: 6316323333
+ email_address: "alan_perlis@fmail.com"
+ specialization: 111
+ GRE_V: 460
+ GRE_V_pctile: 52
+ GRE_Q: 780
+ GRE_Q_pctile: 89
+ GRE_A: 3.5
+ GRE_A_pctile: 70
+ GRE_subj_name: "Computer Science"
+ GRE_subj_score: 820
+ TOEFL: 108
+ IELTS: 6.5
+ TOEFL_internet: 30
+ research_area: "Artificial Intelligence"
+ research_topics: "Data Mining"
+ ug_rank: 123
+ ug_out_of: 500
+ grad_rank: 11
+ grad_out_of: 45
+ ug_inst: "University of Mumbai"
+ ug_GPA: 72.11
+ ug_scale: "100 Point Scale"
+ ug_GPA1: 68.23
+ ug_GPA2: 73.86
+ ug_GPA3: 74.79
+ ug_GPA4: 72.8
+ ug_GPA5: 80.2
+ grad_inst: "University of Florida"
+ grad_GPA: 3.59
+ grad_scale: "4.0 Point Scale"
+ grad_GPA1: 3.55
+ grad_GPA2: 3.65
+ theory_course_title: "Theory of Computation"
+ theory_scale: 4.0
+ theory_grade: 3.3
+ theory_SBU_equiv: 3.2
+ algorithm_course_title: "Analysis of Algorithm"
+ algorithm_scale: "4.0 Point Scale"
+ algorithm_grade: 3.5
+ algorithm_SBU_equiv: 3.5
+ prog_lang_course_title: "Programming Languages"
+ prog_lang_scale: "4.0"
+ prog_lang_grade: 3.2
+ prog_lang_SBU_equiv: 3.2
+ os_course_title: "Distributed Operating Systems"
+ os_scale: "4.0 Point Scale"
+ os_grade: 3.8
+ os_SBU_equiv: 3.8
+ otherInfo: "nothing"
+
+
+two:
+ id: 2
+ submission_date: 2012-11-11 11:11:11
+ applicant_client_id: 2
+ last_name: "Will"
+ first_name: "Smith"
+ middle_name: "J."
+ gender: 1
+ birth_month: 12
+ birth_day: 12
+ birth_year: 1982
+ citizenship: "China"
+ ethnicity: "Asian"
+ race: "Asian"
+ permanent_resident: 1
+ phone: 6316322222
+ email_address: "smith_will@fmail.com"
+ specialization: 222
+ GRE_V: 670
+ GRE_V_pctile: 52
+ GRE_Q: 800
+ GRE_Q_pctile: 99
+ GRE_A: 4.5
+ GRE_A_pctile: 80
+ GRE_subj_name: "Computer Science"
+ GRE_subj_score: 700
+ TOEFL: 102
+ IELTS: 7.0
+ TOEFL_internet: 30
+ research_area: "Networks"
+ research_topics: "Networks and Security"
+ ug_rank: 10
+ ug_out_of: 120
+ grad_rank: 45
+ grad_out_of: 150
+ ug_inst: "University of Boston"
+ ug_GPA: 94.12
+ ug_scale: "100 Point Scale"
+ ug_GPA1: 92.12
+ ug_GPA2: 78.33
+ ug_GPA3: 79.45
+ ug_GPA4: 99.8
+ ug_GPA5: 99.9
+ grad_inst: "SUNY Binhamton"
+ grad_GPA: 3.66
+ grad_scale: "4.0 Point Scale"
+ grad_GPA1: 3.54
+ grad_GPA2: 3.72
+ theory_course_title: "Theory of Computation"
+ theory_scale: 4.0
+ theory_grade: 2.8
+ theory_SBU_equiv: 2.7
+ theory_course_title: "Theory of Computation"
+ theory_scale: 4.0
+ theory_grade: 3.85
+ theory_SBU_equiv: 3.85
+ algorithm_course_title: "Analysis of Algorithm"
+ algorithm_scale: "4.0 Point Scale"
+ algorithm_grade: 3.45
+ algorithm_SBU_equiv: 3.5
+ prog_lang_course_title: "Programming Languages"
+ prog_lang_scale: "4.0"
+ prog_lang_grade: 3.0
+ prog_lang_SBU_equiv: 3.0
+ os_course_title: "Distributed Operating Systems"
+ os_scale: "4.0 Point Scale"
+ os_grade: 3.7
+ os_SBU_equiv: 3.8
+ otherInfo: "nothing"

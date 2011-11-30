@@ -1,0 +1,16 @@
+Generated using partial template<br/>
+Application ID: <%= review.id %>
+
+<div class="appArea">
+	<div class="appHeader">
+		<div class="appHeaderTitle">
+			<a href="user.html" class="appName">Leo Bachmair</a>
+		</div>
+		<span class="appSchool">
+			Rating:<%= review.rating %>, Date:<%= review.timestamp %>
+		</span>
+	</div>
+	<div class="reviewContent">
+		<%= review.review %>
+	</div>
+</div>

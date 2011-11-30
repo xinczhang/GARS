@@ -1,0 +1,36 @@
+<%= form_tag :action => 'login' do %>
+	<table>
+		<tr>
+			<td><%= label_tag :email %></td>
+			<td><%= text_field_tag :email %></td>
+		</tr>
+		<tr>
+			<td><%= label_tag :password %></td>
+			<td><%= password_field_tag :password %></td>
+		</tr>
+		<tr>
+			<td colspan=2">
+				<%= check_box_tag :keep_log_in %>
+				<%= label_tag :keep_log_in %>
+			</td>
+		</tr>
+        <tr>
+			<td colspan="2">
+				<%= submit_tag :Login, :id => "loginButton"%>
+			</td>            
+        </tr>
+	</table>
+        
+	<% if flash[:error] %>
+		<p style="color:red;"><%= flash[:error] %></p>
+	<% end %>
+	<% if :notice %>
+		<p style="color:red;"><%= flash[:notice] %></p>
+	<% end %>
+	
+		
+<% end %>
+
+	<div style="clear: both">
+	</div>
+

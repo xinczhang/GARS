@@ -1,0 +1,76 @@
+<table width="666" border="0">
+	<tr>
+		<td width="400">Select program: </td>
+		<td>
+		<select name="program">
+			<option value="phd">Ph.D.</option>
+            <option value="ms">M.S.</option>
+		</select>
+		</td>
+	</tr>
+	<tr>
+		<td width="400"><label>Select AY file on your computer:</label></td>
+		<td width="415"><input type="file" name="datafile" value='ay'></td>
+	</tr>
+	<tr>
+		<td width="400"><label>Select AY mapping file on your computer:</label></td>
+		<td width="415"><input type="file" name="datafile" value='ay-mapping'></td>
+	</tr>
+	<tr>
+		<td width="400"><label>Select OTS file on your computer:</label></td>
+		<td width="415"><input type="file" name="datafile" value='ots'></td>
+	</tr>
+	<tr>
+		<td width="400"><label>Select OTS mapping file on your computer:</label></td>
+		<td width="415"><input type="file" name="datafile" value='ots-mapping'></td>
+	</tr>
+	<tr>
+		<td width="400"><label>Select PDF zip file on your computer:</label></td>
+		<td width="415"><input type="file" name="datafile" value='pdf'></td>
+	</tr>
+</table>
+
+<%= upload_div_helper  %>
+            
+
+                <!-- DISPLAY ERROR MESSAGE--->
+
+                <h2 id="uploadErrorMsgListTitle">Upload Error Message Log</h2>
+
+                <ul id="uploadErrorMsgList">
+
+                    <li>
+
+                        <span>Error: failed to load ay.file. Click <a href="upload_error.html">here</a> for details.</span>
+
+                    </li>
+
+                    <li>
+
+                        <span>Error: failed to load ay.file. Click <a href="upload_error.html">here</a> for details.</span>
+
+                    </li>
+
+                    <li>
+
+                        <span>Error: failed to load ay.file. Click <a href="upload_error.html">here</a> for details.</span>
+
+                    </li>
+
+                    <li>
+
+                        <span>Error: failed to load ay.file. Click <a href="upload_error.html">here</a> for details.</span>
+
+                    </li>
+
+                    <li>
+
+                        <span>Error: failed to load ay.file. Click <a href="upload_error.html">here</a> for details.</span>
+
+                    </li>
+
+                    
+
+                </ul>   
+
+<%= upload_div_helper %>

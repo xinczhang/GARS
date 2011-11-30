@@ -1,0 +1,397 @@
+	
+	<script type="text/javascript">
+				
+		$(function() {
+			$(".tab").hide();
+			var currentTabID = $("#currentTab").attr("href");
+			$(currentTabID).show();
+			
+			$("#sidebar ul a").click(function() {
+				var currentTabID = $("#currentTab").attr("href");
+				$("#currentTab").removeAttr("id");
+				$(currentTabID).hide();
+				var tabID = $(this).attr("href");
+				$(this).attr("id", "currentTab");
+				// show the tab
+				$(tabID).show();
+			});
+			
+			$(".editCommentBtn").button({
+				icons: {
+                	primary: "ui-icon-pencil"
+            	},
+            	text: false
+			}).click(function() {
+				$(this).parent().next().children("div:nth-child(2)").show();				
+			});
+			$(".commentSubmitBtn").click(function() {
+				var appContentDiv = $(this).parents(".appContent");
+				appContentDiv.hide();
+				var appControlsDiv = appContentDiv.parents(".appWrapper").children(".appControls");
+				appControlsDiv.children("div").css("background-color", "green");
+				appControlsDiv.children("a").button("option",{
+					icons: {
+    	            	primary: "ui-icon-plus"
+        	    	},
+            		text: false
+				});
+			});
+			$(".roundContent input").attr("disabled", "disabled");
+			$("#currentRound input").removeAttr("disabled");
+		});
+	</script>
+    
+    
+    
+<div id="mainContainer">
+	<div id="header">
+		<h1>GARS</h1>
+    	
+        <input id="searchQuery" name="searchQuery" value="Search" type="text">
+        
+        <ul id="navBar">
+        	<li><a role="button" href="http://flamingo.splat.cs.sunysb.edu/gars_ui/index.html" class="jqBtn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"><span class="ui-button-text">Applications</span></a></li>
+        	<li><a role="button" href="http://flamingo.splat.cs.sunysb.edu/gars_ui/user.html" class="jqBtn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"><span class="ui-button-text">Users</span></a></li>
+        </ul>
+        
+        <a href="http://flamingo.splat.cs.sunysb.edu/gars_ui/chair.html" id="name">Xiao Qiang Wu</a>
+    </div>
+			
+    <div id="content"><!-- Start of table -->
+		<div id="sidebar">
+    		<img src="/assets/bachmair.jpg">
+        	<ul>
+        		<li><a href="#notificationTab" id="currentTab">Notification</a></li>
+        		<li><a href="#scheduleTab">Round Schedule</a></li>  
+        		<li><a href="#uploadTab">Upload</a></li>  
+                <li><a href="#reviewTab">Reviews</a></li>        					
+                <li><a href="#infoTab">Info</a></li>
+    		</ul>
+    	</div>
+        
+        <div style="display: none;" id="infoTab" class="tab">
+        	<table align="center" border="0" cellpadding="5" cellspacing="1" width="100%">
+
+    <tbody><tr>
+      <td colspan="2"><strong>Leo Bachmair</strong> </td>
+      </tr><tr>
+        <td colspan="2"><p class="boldbluetitle"><b>Computer Science Program Director</b></p>
+          <strong>Professor</strong><br>
+Computer Science Department <br>
+1422 Computer Science <br>
+Stony Brook University <br>
+Stony Brook, NY 11794-4400 <br>
+<br>
+Phone: (631) 632-8452<br>
+<a href="javascript:sendmail('le',%20'o');">Email</a><br>
+<a href="http://flamingo.splat.cs.sunysb.edu/%7Eleo" target="_blank">Personal Web Page</a></td>
+      </tr><tr>
+        <td class="tdFacultyPadding"><strong>Degree:</strong></td>
+        <td>Ph.D Computer Science - University of Illinois at Urbana-Champaign, 1987 <br></td>
+      </tr>
+      <tr>
+        <td class="tdFacultyPadding"><strong>Research Topics: </strong></td>
+        <td>Computational logic, Automated Deduction, Symbolic Computation <br></td>
+      </tr>
+      <tr>
+        <td class="tdFacultyPadding"><strong>Teaching Summary:</strong></td>
+        <td> CSE 215, CSE 303, CSE 541 </td>
+      </tr>
+       	  </tbody></table>
+
+     <!-- Start of table -->
+        </div>
+        
+        <div style="display: none;" id="remindersTab" class="tab">
+        
+        
+        </div>
+        
+        <div style="display: none;" id="scheduleTab" class="tab">
+        	<h2 class="roundHeader">Round 1</h2>
+            
+            <ul class="roundContent">
+            	<li>
+                	<span class="fieldName">Assign Reviewers Period:</span><input disabled="disabled" value="10/8/2011" type="text"><input disabled="disabled" value="10/20/2011" type="text">
+                </li>
+                <li>
+                   <span class="fieldName">Write Reviews Period:</span><input disabled="disabled" value="10/21/2011" type="text"><input disabled="disabled" value="11/1/2011" type="text">
+                </li>
+                <li>
+                    <span class="fieldName">Make Decision Period:</span><input disabled="disabled" value="11/2/2011" type="text"><input disabled="disabled" value="11/10/2011" type="text">
+                </li>
+       		</ul>
+            <h2 class="roundHeader">Round 2</h2>
+            
+            <ul class="roundContent">
+            	<li>
+                	<span class="fieldName">Assign Reviewers Period:</span><input disabled="disabled" value="11/11/2011" type="text"><input disabled="disabled" value="11/20/2011" type="text">
+                </li>
+                <li>
+                   <span class="fieldName">Write Reviews Period:</span><input disabled="disabled" value="11/21/2011" type="text"><input disabled="disabled" value="12/1/2011" type="text">
+                </li>
+                <li>
+                    <span class="fieldName">Make Decision Period:</span><input disabled="disabled" value="12/2/2011" type="text"><input disabled="disabled" value="12/10/2011" type="text">
+                </li>
+       		</ul>    
+            <h2 class="roundHeader">Current Round</h2>
+            
+            <ul class="roundContent" id="currentRound">
+            	<li>
+                	<span class="fieldName">Assign Reviewers Period:</span><input value="12/11/2011" type="text"><input value="12/20/2011" type="text"><input value="Edit" type="button">
+                </li>
+                <li>
+                   <span class="fieldName">Write Reviews Period:</span><input value="Start Date" type="text"><input value="End Date" type="text"><input value="Confirm" type="button">
+                </li>
+                <li>
+                    <span class="fieldName">Make Decision Period:</span><input value="Start Date" type="text"><input value="End Date" type="text"><input value="Confirm" type="button">
+                </li>
+       		</ul>
+            
+            <input value="Create New Round" type="button">
+        </div>
+        
+        <div style="display: none;" id="uploadTab" class="tab">
+    	<table border="0" width="666">
+                  <tbody><tr>
+                    <td>Select program: </td>
+                    <td><select name="select">
+                      <option selected="selected" value="MS">Ph.D.</option>
+                      <option value="MS">M.S.</option>
+                    </select></td>
+                  </tr>
+                  <tr>
+                    <td width="241"><label>Select AY file on your computer:</label></td>
+                    <td width="415"><input name="ay_file" size="40" type="file"></td>
+                  </tr>
+                  <tr>
+                    <td><label>Select Map file on your computer:</label></td>
+                    <td><input name="map_file" size="40" type="file"></td>
+                  </tr>
+                  <tr>
+                    <td><label>Select OTS file on your computer:</label></td>
+                    <td><input name="ots_file" size="40" type="file"></td>
+                  </tr>
+                  <tr>
+                    <td><label>Select PDF zip file on your computer:</label></td>
+                    <td><input name="ots_file2" size="40" type="file"></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td><input name="uploadButton" id="uploadButton" value="Upload" type="submit"></td>
+                    </tr>
+                </tbody></table>
+            
+                <!-- DISPLAY ERROR MESSAGE--->
+                <h2 id="uploadErrorMsgListTitle">Upload Error Message Log</h2>
+                <ul id="uploadErrorMsgList">
+                    <li>
+                        <span>Error: failed to load ay.file. Click <a href="http://flamingo.splat.cs.sunysb.edu/gars_ui/upload_error.html">here</a> for details.</span>
+                    </li>
+                    <li>
+                        <span>Error: failed to load ay.file. Click <a href="http://flamingo.splat.cs.sunysb.edu/gars_ui/upload_error.html">here</a> for details.</span>
+                    </li>
+                    <li>
+                        <span>Error: failed to load ay.file. Click <a href="http://flamingo.splat.cs.sunysb.edu/gars_ui/upload_error.html">here</a> for details.</span>
+                    </li>
+                    <li>
+                        <span>Error: failed to load ay.file. Click <a href="http://flamingo.splat.cs.sunysb.edu/gars_ui/upload_error.html">here</a> for details.</span>
+                    </li>
+                    <li>
+                        <span>Error: failed to load ay.file. Click <a href="http://flamingo.splat.cs.sunysb.edu/gars_ui/upload_error.html">here</a> for details.</span>
+                    </li>
+                    
+                </ul>   
+		</div>
+        
+        <div style="display: block;" id="notificationTab" class="tab">
+        	<h2>Leo Bachmair</h2>
+        	<ul>
+            	<li>The deadline for round 2 reviews is approaching. You still have 2 applications left for review.</li>
+            	<li><a href="http://flamingo.splat.cs.sunysb.edu/gars_ui/app.html" class="appName">Alan Perlis</a> has been reviewed by you at 10/15/2011</li>      
+            	<li><a href="http://flamingo.splat.cs.sunysb.edu/gars_ui/app.html" class="appName">Alan Perlis</a> has been assigned to you for review at 10/5/2011</li>    
+            </ul>
+        
+        </div>
+        
+         <div style="display: none;" id="reviewTab" class="tab">
+        	    <select id="roundSelector" onchange="changeRound()">
+                    <option selected="selected" value="0">Show All</option>
+                    <option value="1">Round 1</option>
+                    <option value="2">Round 2</option>
+                    <option value="-1">Current Round</option>
+                </select>
+        	
+            <div id="pagingNavBar">
+            	<label>1-50 of 2000</label>
+                <a role="button" href="#" id="prevBtn" class="jqBtn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"><span class="ui-button-text">Prev</span></a>
+                <a role="button" href="#" id="nextBtn" class="jqBtn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"><span class="ui-button-text">Next</span></a>           	
+			</div>
+            
+            <div id="displayAppsArea">
+            	<div class="appWrapper">
+                <div class="appControls">                
+					<div style="width: 15px; height:15px; background-color:red; margin-top: 2px; margin-left: 2px;margin-right: 5px; display:inline-block">
+                	</div>
+					<a title="Edit Comment" role="button" href="#" class="editCommentBtn ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only"><span class="ui-button-icon-primary ui-icon ui-icon-pencil"></span><span class="ui-button-text">Edit Comment</span></a>
+                </div>
+             	<div class="appArea">
+					<div class="appHeader">
+						<div class="appHeaderTitle">
+							<a href="http://flamingo.splat.cs.sunysb.edu/gars_ui/user" class="appName">Alan Perils</a>	
+							(<a href="#" class="appPDFLink">PDF</a>)
+						</div>
+						<span class="appSchool">Stony Brook University</span>,
+						<span class="appMajor">Computer Science</span>,
+						<span class="appGPA">4.0</span>					
+					</div>
+					
+					<div class="appContent">
+                    	<table>
+	                    	<tbody><tr>
+                            	<td width="111">Select rating:</td>
+                                <td width="459">
+                                    <select>
+                                        <option selected="selected">1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                            	<td colspan="2">Enter Comment:</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><textarea cols="90" rows="7"></textarea></td>
+                            </tr>
+                            <tr>
+                            	<td colspan="2"><input aria-disabled="false" role="button" value="Save" class="jqBtn ui-button ui-widget ui-state-default ui-corner-all" type="button">
+                            	<input aria-disabled="false" role="button" value="Submit" class="jqBtn commentSubmitBtn ui-button ui-widget ui-state-default ui-corner-all" type="button"></td>
+                            </tr>
+                        </tbody></table>
+					</div>
+				</div>
+            	</div>
+				
+                <div class="appWrapper">
+                <div class="appControls">                
+					<div style="width: 15px; height:15px; background-color:red; margin-top: 2px; margin-left: 2px;margin-right: 5px; display:inline-block">
+                	</div>
+					<a title="Edit Comment" role="button" href="#" class="editCommentBtn ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only"><span class="ui-button-icon-primary ui-icon ui-icon-pencil"></span><span class="ui-button-text">Edit Comment</span></a>
+                </div>
+             	<div class="appArea">
+					<div class="appHeader">
+						<div class="appHeaderTitle">
+							<a href="http://flamingo.splat.cs.sunysb.edu/gars_ui/user" class="appName">Alan Perils</a>	
+							(<a href="#" class="appPDFLink">PDF</a>)
+						</div>
+						<span class="appSchool">Stony Brook University</span>,
+						<span class="appMajor">Computer Science</span>,
+						<span class="appGPA">4.0</span>					
+					</div>
+					
+					<div class="appContent">
+						More details here
+					</div>
+				</div>
+            	</div>
+                
+           		<div class="appWrapper">
+                <div class="appControls">                
+					<div style="width: 15px; height:15px; background-color:yellow; margin-top: 2px; margin-left: 2px;margin-right: 5px; display:inline-block">
+                	</div>
+					<a title="Expand" role="button" href="#" class="editCommentBtn ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only"><span class="ui-button-icon-primary ui-icon ui-icon-pencil"></span><span class="ui-button-text">Expand</span></a>
+                </div>
+             	<div class="appArea">
+					<div class="appHeader">
+						<div class="appHeaderTitle">
+							<a href="http://flamingo.splat.cs.sunysb.edu/gars_ui/user" class="appName">Alan Perils</a>	
+							(<a href="#" class="appPDFLink">PDF</a>)
+						</div>
+						<span class="appSchool">Stony Brook University</span>,
+						<span class="appMajor">Computer Science</span>,
+						<span class="appGPA">4.0</span>					
+					</div>
+					
+					<div class="appContent">
+						More details here
+					</div>
+				</div>
+            	</div>
+                
+                <div class="appWrapper">
+                <div class="appControls">                
+					<div style="width: 15px; height:15px; background-color:yellow; margin-top: 2px; margin-left: 2px;margin-right: 5px; display:inline-block">
+                	</div>
+					<a title="Expand" role="button" href="#" class="editCommentBtn ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only"><span class="ui-button-icon-primary ui-icon ui-icon-pencil"></span><span class="ui-button-text">Expand</span></a>
+                </div>
+             	<div class="appArea">
+					<div class="appHeader">
+						<div class="appHeaderTitle">
+							<a href="http://flamingo.splat.cs.sunysb.edu/gars_ui/user" class="appName">Alan Perils</a>	
+							(<a href="#" class="appPDFLink">PDF</a>)
+						</div>
+						<span class="appSchool">Stony Brook University</span>,
+						<span class="appMajor">Computer Science</span>,
+						<span class="appGPA">4.0</span>					
+					</div>
+					
+					<div class="appContent">
+						More details here
+					</div>
+				</div>
+            	</div>
+                
+                <div class="appWrapper">
+                <div class="appControls">                
+					<div style="width: 15px; height:15px; background-color:green; margin-top: 2px; margin-left: 2px;margin-right: 5px; display:inline-block">
+                	</div>
+					<a title="Expand" role="button" href="#" class="expandAppBtn ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only"><span class="ui-button-icon-primary ui-icon ui-icon-plus"></span><span class="ui-button-text">Expand</span></a>
+                </div>
+             	<div class="appArea">
+					<div class="appHeader">
+						<div class="appHeaderTitle">
+							<a href="http://flamingo.splat.cs.sunysb.edu/gars_ui/user" class="appName">Alan Perils</a>	
+							(<a href="#" class="appPDFLink">PDF</a>)
+						</div>
+						<span class="appSchool">Stony Brook University</span>,
+						<span class="appMajor">Computer Science</span>,
+						<span class="appGPA">4.0</span>					
+					</div>
+					
+					<div class="appContent">
+						More details here
+					</div>
+				</div>
+            	</div>
+                
+                <div class="appWrapper">
+                <div class="appControls">                
+					<div style="width: 15px; height:15px; background-color:green; margin-top: 2px; margin-left: 2px;margin-right: 5px; display:inline-block">
+                	</div>
+					<a title="Expand" role="button" href="#" class="expandAppBtn ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only"><span class="ui-button-icon-primary ui-icon ui-icon-plus"></span><span class="ui-button-text">Expand</span></a>
+                </div>
+             	<div class="appArea">
+					<div class="appHeader">
+						<div class="appHeaderTitle">
+							<a href="http://flamingo.splat.cs.sunysb.edu/gars_ui/user" class="appName">Alan Perils</a>	
+							(<a href="#" class="appPDFLink">PDF</a>)
+						</div>
+						<span class="appSchool">Stony Brook University</span>,
+						<span class="appMajor">Computer Science</span>,
+						<span class="appGPA">4.0</span>					
+					</div>
+					
+					<div class="appContent">
+						More details here
+					</div>
+				</div>
+            	</div>
+           </div>
+    </div>  
+  </div>
+  <div id="footer">GAR 2011</div>
+</div>
+
+

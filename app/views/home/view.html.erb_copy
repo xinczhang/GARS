@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+	<head><title>GARS</title>
+	<%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+    <link type="text/css" rel="stylesheet" href="css/general.css">
+    <link type="text/css" rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.16.custom - Copy.css">  
+    <link type="text/css" rel="stylesheet" href="css/app.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			 $("#upload_btn").click(function(){
+                                $("#upload-form").dialog({
+                                        autoOpen:false,
+					width:350
+                                });
+				$("#upload-form").dialog('open');                             
+                        });
+					
+			$( "#selectRadios" ).buttonset();
+		
+			$("#expandBtn").button({
+				icons: {
+                	primary: "ui-icon-plus"
+            	},
+            	text: false
+			})
+			.click(function() {
+				/* expandBtn click */
+				var options;
+				if ( $( this ).text() === "Expand" ) {
+					options = {
+						label: "Collapse",
+						icons: {
+							primary: "ui-icon-minus"
+						}
+					};
+					$(".appContent").show();
+					$(".expandAppBtn").button("option", options)
+				} else {
+					options = {
+						label: "Expand",
+						icons: {
+							primary: "ui-icon-plus"
+						}
+					};
+					$(".appContent").hide();
+					$(".expandAppBtn").button("option", options)
+				}
+				$( this ).button( "option", options );
+			});
+			
+			$(".jqBtn").button();
+			$("#prevBtn").button({
+				text: false,
+				icons: {
+					primary: "ui-icon-triangle-1-w"
+				}
+			})
+			.click(function() {
+				/* prevBtn click */
+				alert("prev button clicked");
+			});
+			$("#nextBtn").button({
+				text: false,
+				icons: {
+					primary: "ui-icon-triangle-1-e"
+				}
+			})
+			.click(function() {
+				/* nextBtn click */
+				alert("next button clicked");
+			});
+			
+			
+			$("#whatever").buttonset();
+			$(".selector").buttonset();
+			$("#selectRadios").buttonset();
+			
+			$("#selectAllBtn").click(function() {
+				$(".selectAppCB").attr('checked', 'checked');
+			});
+			$("#selectNoneBtn").click(function() {
+				$(".selectAppCB").removeAttr('checked');
+			});
+			
+			$("#filter_accordion").hide()
+			
+			$("#searchQuery").focus(function() {
+				if ($(this).val() == "Search" ) {
+					$(this).val("");
+					$(this).css("color", "black");
+				}
+			}).focusout(function() {
+				if ($(this).val() == "" ) {
+					$(this).val("Search");
+					$(this).css("color", "#CCC");
+				}
+			});
+					
+			$(".expandAppBtn").button({
+				icons: {
+                	primary: "ui-icon-plus"
+            	},
+            	text: false
+			})
+			.click(function() {
+				/* expandAppBtn click */
+				var options;
+				if ($(this).text() === "Expand" ) {
+					options = {
+						label: "Collapse",
+						icons: {
+							primary: "ui-icon-minus"
+						}
+					};
+					$(this).parent().next().children(".appContent").show();
+				} else {
+					options = {
+						label: "Expand",
+						icons: {
+							primary: "ui-icon-plus"
+						}
+					};
+					$(this).parent().next().children(".appContent").hide();
+				}
+				$( this ).button( "option", options );
+			});		
+			
+			
+			$(".dialog").parent().css("display", "inline-block").buttonset();
+			$(".dialogTrigger").click(function() {
+				var dialog = $(this).next().next();
+				if (dialog.css("display") != "none") {
+					dialog.slideUp("fast");
+				} else {
+					// $(".dialog").hide().prev().prev().click();
+					dialog.slideDown("fast");
+				}
+			});				
+			
+			notAssignable();
+			// the dialog that shows up when the assign button is clicked
+			$("#assignDialog").dialog({
+				width: 700,
+				height: 400,
+				modal: true,
+				autoOpen: false, // closed intially
+				draggable: false,
+				resizable: false,
+				buttons: {
+				Ok: function() {
+						$(this ).dialog( "close" );
+					}
+				}
+			});	
+			$("#assignBtn").click(function() {
+				$("#assignDialog").dialog("open");
+			});
+			
+						// the dialog that shows up when the add remove fields button is clicked
+			$("#addRemoveFieldsDialog").dialog({
+				width: 900,
+				height: 400,
+				modal: true,
+				autoOpen: false, // closed intially
+				draggable: false,
+				resizable: false,
+				buttons: {
+				Ok: function() {
+						$(this ).dialog( "close" );
+					}
+				}
+			});	
+			$("#addRemoveFieldsBtn").click(function() {
+				$("#addRemoveFieldsDialog").dialog("open");
+			});
+			
+			
+			// sort add level button click handler
+			$("#sortAddLevelBtn").click(function() {
+				var html = "&lt;li&gt;&lt;span&gt;Sort by: &lt;/span&gt;&lt;select&gt;&lt;option&gt;AY Data&lt;/option&gt;&lt;option&gt;OTS Data&lt;/option&gt;&lt;option&gt;GARS Data&lt;/option&gt;&lt;/select&gt; &lt;select&gt;&lt;option&gt;GPA&lt;/option&gt;&lt;option&gt;Rank&lt;/option&gt;&lt;option&gt;Institution&lt;/option&gt;&lt;/select&gt;&lt;/li&gt;";
+				$("#sortDialog ul").append($(html));		
+			});
+			
+			
+			$(".section .header").click(function() {
+				var className = $(this).parent().attr("class");
+				if (className.indexOf('expanded') == -1) {
+					$(this).parent().attr('class', 'section expanded');
+				}
+				else {
+					$(this).parent().attr('class', 'section collapsed');
+				}
+			});
+		});
+		
+		function notAssignable() {
+			$("#assignBtn").hide();
+			$("#selectRadios").hide();
+			$(".selectAppCB").hide();
+		}
+		function assignable() {
+			$("#assignBtn").show();
+			$("#selectRadios").show();
+			$(".selectAppCB").show();			
+		}
+		function changeRound() {
+			if ($("#roundSelector").val() == -1) {
+				assignable();
+			} else {
+				notAssignable();
+			}
+		}
+	</script>
+    
+    
+    
+</head> 
+<body>
+<div id="mainContainer">
+	<div id="header">
+		<h1>GARS</h1>
+    <form action="/home/search" method="post">	
+        <input type="text" id="searchQuery" name="searchQuery" value="Search"/>
+    </form>
+        <ul id="navBar">
+        	<li><a href="#" class="jqBtn">Applications</a></li>
+        	<li><a href="#" class="jqBtn">Users</a></li>
+            <li><a href="#" id="upload_btn" class="jqBtn">Upload</a></li>
+        </ul>
+    	    
+        <a id="name" href="/home/profile"><%= session[:current_user].name %></a>
+	</div>
+    <div id="content">
+    	<div id="toolbar">
+        	<div id="selectRadios">
+				<input type="radio" id="selectAllBtn" name="radio" /><label for="selectAllBtn">All</label>
+				<input type="radio" id="selectNoneBtn" name="radio" checked="checked" /><label for="selectNoneBtn">None</label>
+        	</div>
+        	<a href="#" id="expandBtn">Expand</a>
+            <a href="#" class="jqBtn" id="assignBtn">Assign Reviewer</a>	
+            <select id="roundSelector" onChange="changeRound()">
+                <option value="0">Show All</option>
+                <option value="1">Round 1</option>
+                <option value="2">Round 2</option>
+                <option value="-1">Current Round</option>
+            </select>			
+			<div>
+				<input type="checkbox" class="dialogTrigger" id="filterBtn"><label for="filterBtn">Filter</label>
+				<div class="dialog" id="sortDialog">
+					More stuff<br/>
+					More stuff<br/>
+					More stuff<br/>
+					More stuff<br/>
+					More stuff<br/>
+				</div>
+           	</div>
+            <div>
+				<input type="checkbox" class="dialogTrigger" id="sortBtn"><label for="sortBtn">Sort</label>
+				<div class="dialog" id="sortDialog">
+					More stuff<br/>
+					More stuff<br/>
+					More stuff<br/>
+					More stuff<br/>
+					More stuff<br/>
+				</div>
+           	</div>
+            <a href="#" id="addRemoveFieldsBtn" class="jqBtn">Add/Remove fields</a>
+                    
+            <div id="pagingNavBar">
+            	<label>1-50 of 2000</label>
+                <a href="#" id="prevBtn" class="jqBtn">Prev</a>
+                <a href="#" id="nextBtn" class="jqBtn">Next</a>           	
+			</div>
+     	</div>
+         
+         <!-- DISPLAY APPLICATIONS -->
+         <div id="displayAppsArea">
+		<% @applications.each do |application|  %>
+			<% ay = application.apply_yourself %>
+			<div class="appWrapper">
+				<div class="appControls">
+					<input type="checkbox" class="selectAppCB" style="display: none;">
+					<a class="expandAppBtn ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" href="#" role="button" title="Expand"><span class="ui-button-icon-primary ui-icon ui-icon-plus"></span><span class="ui-button-text">Expand</span></a>
+				</div>
+				<div class="appArea">
+					<div class="appHeader">
+						<div class="appHeaderTitle">
+							<%= link_to "#{ay.applicantFirstName+' '+ay.applicantLastName}", {:action=>"show",:id=>ay.id}, :class=>"appName" %>
+							(<a class="appPDFLink" href="#">PDF</a>)
+						</div>
+						<span class="appSchool"><%=ay.institution2 %></span>
+						,
+						<span class="appCountry"><%=ay.countryOfCitizenship%></span>
+					</div>
+					<div class="appContent" style="display: none;">
+						more content...	
+					</div>	
+				</div>
+			</div>
+		<% end %>
+         </div>
+  	
+	<div id="footer">GARS  2011</div>
+    
+    
+    <div id="assignDialog" title="Assign Reviewers">
+    	<div class="toolbar">
+        	<div id="whatever">
+				<input type="radio" id="a" name="radio" /><label for="a">All</label>
+				<input type="radio" id="b" name="radio" checked="checked" /><label for="b">None</label>
+        	</div>
+            
+            <div id="pagingNavBar">
+            	<label>1-50 of 2000</label>
+                <a href="#" id="prevBtn" class="jqBtn">Prev</a>
+                <a href="#" id="nextBtn" class="jqBtn">Next</a>           	
+			</div>
+        
+        </div>
+		<div class="appWrapper">
+				<div class="appControls">
+					<input type="checkbox" class="selectAppCB"/>
+					<a href="#" class="expandAppBtn">Expand</a>
+				</div>
+             	<div class="appArea">
+					<div class="appHeader">
+						<div class="appHeaderTitle">
+							<a href="user.html" class="appName">Leo Bachmair</a>
+						</div>
+						<span class="appSchool">Professor</span>,
+						<span class="appSchool">Ph.D.</span>,
+						<span class="appMajor">University of Illinois at Urbana-Champaign</span>			
+					</div>
+					
+					<div class="appContent">
+						Computational logic; automated deduction; symbolic computation
+					</div>
+				</div>
+			</div>
+						
+            <div class="appWrapper">
+				<div class="appControls">
+					<input type="checkbox" class="selectAppCB"/>
+					<a href="#" class="expandAppBtn">Expand</a>
+				</div>
+             	<div class="appArea">
+					<div class="appHeader">
+						<div class="appHeaderTitle">
+							<a href="#" class="appName">Leo Bachmair</a>
+						</div>
+						<span class="appSchool">Professor</span>,
+						<span class="appSchool">Ph.D.</span>,
+						<span class="appMajor">University of Illinois at Urbana-Champaign</span>			
+					</div>
+					
+					<div class="appContent">
+						Computational logic; automated deduction; symbolic computation
+					</div>
+				</div>
+			</div>
+			
+            <div class="appWrapper">
+				<div class="appControls">
+					<input type="checkbox" class="selectAppCB"/>
+					<a href="#" class="expandAppBtn">Expand</a>
+				</div>
+             	<div class="appArea">
+					<div class="appHeader">
+						<div class="appHeaderTitle">
+							<a href="#" class="appName">Leo Bachmair</a>
+						</div>
+						<span class="appSchool">Professor</span>,
+						<span class="appSchool">Ph.D.</span>,
+						<span class="appMajor">University of Illinois at Urbana-Champaign</span>			
+					</div>
+					
+					<div class="appContent">
+						Computational logic; automated deduction; symbolic computation
+					</div>
+				</div>
+			</div>
+			
+			
+            <div class="appWrapper">
+				<div class="appControls">
+					<input type="checkbox" class="selectAppCB"/>
+					<a href="#" class="expandAppBtn">Expand</a>
+				</div>
+             	<div class="appArea">
+					<div class="appHeader">
+						<div class="appHeaderTitle">
+							<a href="#" class="appName">Leo Bachmair</a>
+						</div>
+						<span class="appSchool">Professor</span>,
+						<span class="appSchool">Ph.D.</span>,
+						<span class="appMajor">University of Illinois at Urbana-Champaign</span>			
+					</div>
+					
+					<div class="appContent">
+						Computational logic; automated deduction; symbolic computation
+					</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+<div id="upload-form" title="Uploading File" style="display:none;">
+                <form action="/home/upload" enctype="multipart/form-data" method="post">
+                        <p>
+                                Please specify a file, or a set of files:<br/>
+                                <input type="file" name="datafile" size="40"/>
+                        </p>
+                        <div><input type="submit" value="Upload" /></div>
+                </form>
+</div>
+</body>
+</html>

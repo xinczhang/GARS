@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GARS</title>
+  <%= stylesheet_link_tag "general", "app", "jquery-ui-1.8.16.custom" %>
+ 
+  <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js",
+							 "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js",
+							"ajaxfileupload.js",
+							 controller.action_name
+  %>
+		
+  <script type='text/javascript'>
+	$(document).ready(function() {
+		$('.jqBtn').button();
+
+		// the dialog that shows up when the assign button is clicked
+			$("#upload-form").dialog({
+				width: 700,
+				height: 400,
+				modal: true,
+				autoOpen: false, // closed intially
+				draggable: false,
+				resizable: false
+			});	
+			$("#upload_tab").click(function() {
+				$("#upload-form").dialog("open");
+				return false;
+			});
+
+	});
+  </script>
+  
+  <%= yield :head %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+	
+<div id="mainContainer">
+	<div id="header">
+		<h1>GARS</h1>
+		
+		<% if @is_logged_in %>
+			<input type="text" id="searchQuery" name="searchQuery" value="Search"/>
+			
+			
+			<ul id="navBar">
+				<li><span id='uname'><%= @uname %></span></li>
+				<% if @is_admin %>
+					<li><%= link_to 'Applications', view_table_view_path, :class => 'jqBtn' %></li>
+					<li><%= link_to 'Round Schedule', home_round_path, :class => 'jqBtn' %></li>
+					<li><%= link_to 'Upload', home_upload_path, :class => 'jqBtn', :id=>'upload_tab' %></li>
+				<% end %>
+				<li><%= link_to 'Review', home_reviews_path, :class => 'jqBtn' %></li>
+				<li><%= link_to 'Logout', home_logout_path, :class => 'jqBtn' %></li>
+			</ul>
+		<% end %>
+	</div>
+        
+    <div id="content">
+		<%= yield %>
+	</div>
+</div>
+
+
+<% if@is_admin %>
+	<%= upload_div_helper %>
+<% end %>
+
+</body>
+</html>

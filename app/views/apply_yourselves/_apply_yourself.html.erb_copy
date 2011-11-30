@@ -1,0 +1,123 @@
+<div style="display:block" id="app_applicant_information" class="section">
+	<div class="header">
+		<h2>Applicant Information</h2>
+	</div>
+
+	<div class="content">
+		<table class="application">
+			<tbody><tr>
+
+							<td class="fieldHead">Client ID:</td>
+
+							<td><%= apply_yourself.applicantClientID %></td>
+
+						</tr>
+
+						<tr>
+
+							<td class="fieldHead">First Name:</td>
+
+							<td><%= apply_yourself.applicantFirstName %></td>
+
+						</tr><tr>
+
+							<td class="fieldHead"> Middle Name:</td>
+
+							<td><%= apply_yourself.applicantMiddleName %></td>
+
+						</tr>
+
+							
+
+						<tr>	
+
+							<td class="fieldHead">Last Name:</td>
+
+							<td><%= apply_yourself.applicantLastName %></td>
+
+						</tr>
+
+						<tr>
+
+							<td class="fieldHead">Email:</td>
+
+							<td><%=apply_yourself.emailAddress%></td>
+
+						</tr>
+
+						<tr>
+
+							<td class="fieldHead">Country of Citizenship:</td>
+
+							<td><%=apply_yourself.countryOfCitizenship%></td>
+
+						</tr>
+
+						<tr>
+
+							<td class="fieldHead">Date of Birth:</td>
+
+							<td><%=apply_yourself.dateOfBirth%></td>
+
+						</tr><tr>
+
+							<td class="fieldHead">Gender:</td>
+
+							<td><%=apply_yourself.gender%></td>
+
+						</tr>
+
+						<tr>
+
+							<td class="fieldHead">Ethnicity:</td>
+
+							<td></td>
+
+						</tr>
+
+						
+
+						<tr>
+
+							<td class="fieldHead">Race:</td>
+
+							<td><%=apply_yourself.race%></td>
+
+						</tr>
+
+						<tr>
+
+							<td class="fieldHead">Permanent Resident_yes no:</td>
+
+							<td></td>
+
+						</tr>
+
+						<tr>
+
+							<td class="fieldHead">Current Phone:</td>
+
+							<td><%=apply_yourself.currentPhone%></td>
+
+						</tr>
+
+						<tr>
+
+							<td class="fieldHead">Program:</td>
+
+							<td><%=apply_yourself.program%></td>
+
+						</tr>
+
+						<tr>
+
+							<td class="fieldHead">Indicate Topics:</td>
+
+							<td><%=apply_yourself.indicatedTopics%></td>
+
+						</tr>
+
+					</tbody></table>
+
+	</div>
+</div>

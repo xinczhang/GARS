@@ -1,0 +1,86 @@
+.section {
+    margin: 5px 0px;
+    padding: 0px 0px;
+	overflow: hidden;
+}
+.header:hover {
+	background-color: #EEE;
+}
+.header h2 {
+    border-bottom: 2px solid #E0E0E0;
+	margin: 0px;
+    padding: 2px 0px;
+	padding-left: 5px;
+}
+
+.resume{
+	#border: 1px solid red;
+	margin: 0px;
+	padding: 0px;
+}
+.resume h2
+{
+    color: #999999;
+    font-size: 16px;
+}
+.section.collapsed .header h2, .section.expanded .header h2{	
+	padding-left: 28px;
+}
+.section .content {
+    padding-left: 10px;
+	clear: both;
+}
+.section.collapsed .header {
+	background-image: url("icon/plus.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.section.expanded .header {
+	background-image: url("icon/minus.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+}	
+.section.collapsed .content {
+	display: none;
+}
+.section.expanded .content {
+	display: block;
+}
+.content h3{
+    color: #006699;
+    font-size: 14px;
+	font-weight: bold;
+}
+.content p{
+	font-size: 13px;
+	padding-bottom:0px;
+}
+table.application{
+	font-size: 13px;
+	
+}
+table.application td{
+	width:200;
+}
+.fieldHead {
+    font-weight: bold;
+	text-align:left;
+
+}
+.fieldHead2 {
+    font-weight: bold;
+	text-align:left;
+	padding-left: 60px;
+
+}
+#courses, #grad_gpa , #undergrad_gpa {
+    border-collapse: collapse;
+}
+ #courses th,#undergrad_gpa th, #grad_gpa  th{
+	background-color:#EEEEEE
+}
+#courses td, #courses th,#undergrad_gpa th,#undergrad_gpa td, #grad_gpa  th, #grad_gpa  td {
+    border: 2px solid #E0E0E0;
+    padding: 3px 7px 2px;
+	text-align:center;
+}

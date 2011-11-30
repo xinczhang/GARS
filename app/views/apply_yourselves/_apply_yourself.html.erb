@@ -1,0 +1,38 @@
+<div style="display:block" id="app_applicant_information" class="section">
+	<div class="header">
+		<h2>Applicant Information</h2>
+	</div>
+
+	<div class="content">
+		<table class="application">
+			<tbody>
+				<% if (session[:ay_display] == nil)%>
+				<% MAPPER.get_attr_list("ay").each do |display| %>						
+				<tr>
+					<td class="fieldHead"><%= display+":"  %></td>
+					<% name = MAPPER.get_attr('ay',display)[:name] %>
+					<% if( ApplyYourself.method_defined? :"#{name}" ) %>
+						<td><%= apply_yourself.send(:"#{name}")  %></td>
+					<% else %>
+						<td></td>
+					<% end %>
+				</tr>
+				<% end %>
+<%else%>
+<% session[:ay_display].each do |display| %> 
+                                <tr>
+                                        <td class="fieldHead"><%= display+":"  %></td>
+                                         <% name = MAPPER.get_attr('ay',display)[:name] %>
+
+                                        <% if( ApplyYourself.method_defined? :"#{name}" ) %>
+                                                <td><%= apply_yourself.send(:"#{name}")  %></td>
+                                        <% else %>
+                                                <td></td>
+                                        <% end %>
+				<% end %>
+
+				<% end %> 
+			</tbody>
+		</table>
+	</div>
+</div>

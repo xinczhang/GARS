@@ -1,0 +1,91 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+ots1:
+ id: 1
+ last_name: "Perlis"
+ first_name: "Alan"
+ email_address: "alan_perlis@fmail.com"
+ citizenship: "US"
+ birth_month: 11
+ birth_day: 11
+ birth_year: 1989
+ gender: 0
+ ofcl_GRE_V: 800
+ ofcl_GRE_V_pctile: 99
+ ofcl_GRE_Q: 800
+ ofcl_GRE_Q_pctile: 99
+ ofcl_GRE_A: 780
+ ofcl_GRE_A_pctile: 97
+ ofcl_GRE_subj: 850
+ ofcl_GRE_subj_pctile: 97
+ ofcl_GRE_subj_name: "cmpsc"
+ ofcl_TOEFL_total: 97
+ ofcl_TOEFL_listen: 30
+ ofcl_TOEFL_read: 22
+ ofcl_TOEFL_speak: 21
+ ofcl_TOEFL_write: 24
+ 
+
+ots2:
+ id: 2
+ last_name: "Wilkes"
+ first_name: "Maurice"
+ email_address: "maurice.wilkes@fmail.com"
+ citizenship: "German"
+ birth_month: 11
+ birth_day: 22
+ birth_year: 1995
+ gender: 1
+ ofcl_GRE_V: 790
+ ofcl_GRE_V_pctile: 99
+ ofcl_GRE_Q: 800
+ ofcl_GRE_Q_pctile: 99
+ ofcl_GRE_A: 4.5
+ ofcl_GRE_A_pctile: 94
+ ofcl_GRE_subj: 850
+ ofcl_GRE_subj_pctile: 97
+ ofcl_GRE_subj_name: "cmpsc"
+ ofcl_TOEFL_total: 108
+ ofcl_TOEFL_listen: 30
+ ofcl_TOEFL_read: 25
+ ofcl_TOEFL_speak: 29
+ ofcl_TOEFL_write: 24
+
+
+ots3:
+ id: 3
+ last_name: "Hamming"
+ first_name: "Richard"
+ email_address: "hamming@fmail.com"
+ citizenship: "India"
+ birth_month: 01
+ birth_day: 02
+ birth_year: 1990
+ gender: 0
+ ofcl_GRE_V: 740
+ ofcl_GRE_V_pctile: 94
+ ofcl_GRE_Q: 780
+ ofcl_GRE_Q_pctile: 95
+ ofcl_GRE_A: 4
+ ofcl_GRE_A_pctile: 92
+ ofcl_GRE_subj: 720
+ ofcl_GRE_subj_pctile: 92
+ ofcl_GRE_subj_name: "cmpsc"
+ ofcl_TOEFL_total: 100
+ ofcl_TOEFL_listen: 20
+ ofcl_TOEFL_read: 20
+ ofcl_TOEFL_speak: 20
+ ofcl_TOEFL_write: 20
+
+
+
+
+
+# column: value
+#
+
+#  column: value

@@ -1,0 +1,28 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+one: 
+ id: 1
+ review: "This student is awesome!"
+ rating: 5
+ timestamp: 2011-10-27 12:12:12
+
+# column: value
+#
+two: 
+ id: 2
+ review: "This student is more than awesome!"
+ rating: 9
+ timestamp: 2011-10-28 12:12:12
+
+three: 
+ id: 3
+ review: "This student is more than awesome!"
+ rating: 9
+ timestamp: 2011-09-27 12:12:12
+
+
+#  column: value

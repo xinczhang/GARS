@@ -1,0 +1,24 @@
+<h1>Listing apply_yourselves</h1>
+
+<table>
+  <tr>
+    <th>Tofel</th>
+    <th>Gpa</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @apply_yourselves.each do |apply_yourself| %>
+  <tr>
+    <td><%= render apply_yourself %></td>
+    <td><%= link_to 'Show', apply_yourself %></td>
+    <td><%= link_to 'Edit', edit_apply_yourself_path(apply_yourself) %></td>
+    <td><%= link_to 'Destroy', apply_yourself, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Apply yourself', new_apply_yourself_path %>

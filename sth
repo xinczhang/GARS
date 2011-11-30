@@ -1,0 +1,2316 @@
+=> Booting WEBrick
+=> Rails 3.1.1 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+
+
+Started GET "/" for 192.168.1.209 at 2011-10-27 08:18:17 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 208ms (Views: 207.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.209 at 2011-10-27 08:18:18 -0400
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/app.css?body=1" for 192.168.1.209 at 2011-10-27 08:18:18 -0400
+Served asset /app.css - 200 OK (6ms)
+
+
+Started GET "/assets/general.css?body=1" for 192.168.1.209 at 2011-10-27 08:18:18 -0400
+Served asset /general.css - 200 OK (6ms)
+
+
+Started GET "/assets/home.css?body=1" for 192.168.1.209 at 2011-10-27 08:18:18 -0400
+Served asset /home.css - 200 OK (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.209 at 2011-10-27 08:18:18 -0400
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/profile.css?body=1" for 192.168.1.209 at 2011-10-27 08:18:18 -0400
+Served asset /profile.css - 200 OK (6ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css?body=1" for 192.168.1.209 at 2011-10-27 08:18:18 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css - 200 OK (6ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 192.168.1.209 at 2011-10-27 08:18:18 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.209 at 2011-10-27 08:18:18 -0400
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.209 at 2011-10-27 08:18:18 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/common.js?body=1" for 192.168.1.209 at 2011-10-27 08:18:18 -0400
+Served asset /common.js - 200 OK (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.1.209 at 2011-10-27 08:18:18 -0400
+Served asset /home.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 192.168.1.209 at 2011-10-27 08:18:18 -0400
+Served asset /jquery.ui.core.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 192.168.1.209 at 2011-10-27 08:18:19 -0400
+Served asset /jquery.ui.widget.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.209 at 2011-10-27 08:18:19 -0400
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/" for 192.168.1.1 at 2011-10-27 08:18:34 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 22ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.1 at 2011-10-27 08:18:34 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/general.css?body=1" for 192.168.1.1 at 2011-10-27 08:18:34 -0400
+Served asset /general.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app.css?body=1" for 192.168.1.1 at 2011-10-27 08:18:34 -0400
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 192.168.1.1 at 2011-10-27 08:18:34 -0400
+Served asset /profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 192.168.1.1 at 2011-10-27 08:18:34 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css?body=1" for 192.168.1.1 at 2011-10-27 08:18:34 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.1 at 2011-10-27 08:18:34 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 192.168.1.1 at 2011-10-27 08:18:34 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.1 at 2011-10-27 08:18:34 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.1 at 2011-10-27 08:18:34 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.js?body=1" for 192.168.1.1 at 2011-10-27 08:18:34 -0400
+Served asset /common.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.1.1 at 2011-10-27 08:18:34 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 192.168.1.1 at 2011-10-27 08:18:34 -0400
+Served asset /jquery.ui.core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 192.168.1.1 at 2011-10-27 08:18:34 -0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.1 at 2011-10-27 08:18:34 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/home/login" for 192.168.1.1 at 2011-10-27 08:18:51 -0400
+  Processing by HomeController#login as HTML
+  Parameters: {"email"=>"David.Hansson@gmail.com", "password"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (email='David.Hansson@gmail.com' AND password='123456') LIMIT 1[0m
+  [1m[35mApplication Load (0.3ms)[0m  SELECT `applications`.* FROM `applications` 
+  [1m[36mApplyYourself Load (0.4ms)[0m  [1mSELECT `apply_yourselves`.* FROM `apply_yourselves` WHERE `apply_yourselves`.`id` = 1 LIMIT 1[0m
+  [1m[35mApplyYourself Load (0.4ms)[0m  SELECT `apply_yourselves`.* FROM `apply_yourselves` WHERE `apply_yourselves`.`id` = 2 LIMIT 1
+Rendered home/view.html.erb within layouts/application (230.7ms)
+Completed 200 OK in 323ms (Views: 289.3ms | ActiveRecord: 14.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.1 at 2011-10-27 08:18:51 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/app.css?body=1" for 192.168.1.1 at 2011-10-27 08:18:51 -0400
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/general.css?body=1" for 192.168.1.1 at 2011-10-27 08:18:51 -0400
+Served asset /general.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 192.168.1.1 at 2011-10-27 08:18:51 -0400
+Served asset /profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.1 at 2011-10-27 08:18:51 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 192.168.1.1 at 2011-10-27 08:18:51 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css?body=1" for 192.168.1.1 at 2011-10-27 08:18:51 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 192.168.1.1 at 2011-10-27 08:18:51 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.1 at 2011-10-27 08:18:51 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.1 at 2011-10-27 08:18:51 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.js?body=1" for 192.168.1.1 at 2011-10-27 08:18:51 -0400
+Served asset /common.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.1.1 at 2011-10-27 08:18:51 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 192.168.1.1 at 2011-10-27 08:18:51 -0400
+Served asset /jquery.ui.core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 192.168.1.1 at 2011-10-27 08:18:51 -0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.1 at 2011-10-27 08:18:52 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/home/css/general.css" for 192.168.1.1 at 2011-10-27 08:18:52 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/general.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/home/css/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css" for 192.168.1.1 at 2011-10-27 08:18:52 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/home/css/app.css" for 192.168.1.1 at 2011-10-27 08:18:52 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/app.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 192.168.1.1 at 2011-10-27 08:18:53 -0400
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" for 192.168.1.1 at 2011-10-27 08:18:53 -0400
+Served asset /ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 192.168.1.1 at 2011-10-27 08:18:53 -0400
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-icons_ef8c08_256x240.png" for 192.168.1.1 at 2011-10-27 08:18:53 -0400
+Served asset /ui-lightness/images/ui-icons_ef8c08_256x240.png - 304 Not Modified (3ms)
+
+
+Started POST "/home/search" for 192.168.1.1 at 2011-10-27 08:19:10 -0400
+  Processing by HomeController#search as HTML
+  Parameters: {"searchQuery"=>"ads"}
+WARNING: Can't verify CSRF token authenticity
+Redirected to http://130.245.128.113:3000/home/index
+Completed 500 Internal Server Error in 45ms
+
+NameError (undefined local variable or method `post' for #<HomeController:0xa68e570>):
+  app/controllers/home_controller.rb:39:in `search'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.1 at 2011-10-27 08:20:12 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 192.168.1.1 at 2011-10-27 08:20:12 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/general.css?body=1" for 192.168.1.1 at 2011-10-27 08:20:12 -0400
+Served asset /general.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app.css?body=1" for 192.168.1.1 at 2011-10-27 08:20:12 -0400
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 192.168.1.1 at 2011-10-27 08:20:12 -0400
+Served asset /profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.1 at 2011-10-27 08:20:12 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css?body=1" for 192.168.1.1 at 2011-10-27 08:20:12 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 192.168.1.1 at 2011-10-27 08:20:12 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.1 at 2011-10-27 08:20:12 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.1 at 2011-10-27 08:20:12 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.js?body=1" for 192.168.1.1 at 2011-10-27 08:20:12 -0400
+Served asset /common.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.1.1 at 2011-10-27 08:20:12 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 192.168.1.1 at 2011-10-27 08:20:12 -0400
+Served asset /jquery.ui.core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 192.168.1.1 at 2011-10-27 08:20:12 -0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.1 at 2011-10-27 08:20:12 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/home/css/general.css" for 192.168.1.1 at 2011-10-27 08:20:12 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/general.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/home/css/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css" for 192.168.1.1 at 2011-10-27 08:20:13 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/home/css/app.css" for 192.168.1.1 at 2011-10-27 08:20:13 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/app.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 192.168.1.1 at 2011-10-27 08:20:13 -0400
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-icons_ef8c08_256x240.png" for 192.168.1.1 at 2011-10-27 08:20:13 -0400
+Served asset /ui-lightness/images/ui-icons_ef8c08_256x240.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" for 192.168.1.1 at 2011-10-27 08:20:13 -0400
+Served asset /ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 192.168.1.1 at 2011-10-27 08:20:13 -0400
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started POST "/home/search" for 192.168.1.1 at 2011-10-27 08:20:16 -0400
+  Processing by HomeController#search as HTML
+  Parameters: {"searchQuery"=>"ads"}
+WARNING: Can't verify CSRF token authenticity
+Redirected to http://130.245.128.113:3000/home/index
+Completed 500 Internal Server Error in 7ms
+
+ActiveRecord::PreparedStatementInvalid (wrong number of bind variables (1 for 3) in: apply_yourselves.applicantFirstName LIKE ? OR apply_yourselves.applicantLastName LIKE ? OR apply_yourselves.applicantMiddleName LIKE ?):
+  app/controllers/home_controller.rb:40:in `search'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.1 at 2011-10-27 08:20:43 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/general.css?body=1" for 192.168.1.1 at 2011-10-27 08:20:44 -0400
+Served asset /general.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app.css?body=1" for 192.168.1.1 at 2011-10-27 08:20:44 -0400
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 192.168.1.1 at 2011-10-27 08:20:44 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 192.168.1.1 at 2011-10-27 08:20:44 -0400
+Served asset /profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.1 at 2011-10-27 08:20:44 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css?body=1" for 192.168.1.1 at 2011-10-27 08:20:44 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 192.168.1.1 at 2011-10-27 08:20:44 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.1 at 2011-10-27 08:20:44 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.1 at 2011-10-27 08:20:44 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.1.1 at 2011-10-27 08:20:44 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.js?body=1" for 192.168.1.1 at 2011-10-27 08:20:44 -0400
+Served asset /common.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 192.168.1.1 at 2011-10-27 08:20:44 -0400
+Served asset /jquery.ui.core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 192.168.1.1 at 2011-10-27 08:20:44 -0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.1 at 2011-10-27 08:20:44 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/home/css/general.css" for 192.168.1.1 at 2011-10-27 08:20:44 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/general.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/home/css/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css" for 192.168.1.1 at 2011-10-27 08:20:44 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/home/css/app.css" for 192.168.1.1 at 2011-10-27 08:20:44 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/app.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 192.168.1.1 at 2011-10-27 08:20:45 -0400
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-icons_ef8c08_256x240.png" for 192.168.1.1 at 2011-10-27 08:20:45 -0400
+Served asset /ui-lightness/images/ui-icons_ef8c08_256x240.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" for 192.168.1.1 at 2011-10-27 08:20:45 -0400
+Served asset /ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 192.168.1.1 at 2011-10-27 08:20:45 -0400
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started POST "/home/search" for 192.168.1.1 at 2011-10-27 08:20:56 -0400
+  Processing by HomeController#search as HTML
+  Parameters: {"searchQuery"=>"Alan"}
+WARNING: Can't verify CSRF token authenticity
+Redirected to http://130.245.128.113:3000/home/index
+Completed 500 Internal Server Error in 7ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/home_controller.rb:41:in `search'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.5ms)
+
+
+Started GET "/" for 130.245.24.147 at 2011-10-27 08:55:53 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 130.245.24.147 at 2011-10-27 08:55:53 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/app.css?body=1" for 130.245.24.147 at 2011-10-27 08:55:53 -0400
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css?body=1" for 130.245.24.147 at 2011-10-27 08:55:53 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 130.245.24.147 at 2011-10-27 08:55:53 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 130.245.24.147 at 2011-10-27 08:55:53 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/general.css?body=1" for 130.245.24.147 at 2011-10-27 08:55:53 -0400
+Served asset /general.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 130.245.24.147 at 2011-10-27 08:55:53 -0400
+Served asset /profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 130.245.24.147 at 2011-10-27 08:55:53 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 130.245.24.147 at 2011-10-27 08:55:53 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 130.245.24.147 at 2011-10-27 08:55:53 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.js?body=1" for 130.245.24.147 at 2011-10-27 08:55:53 -0400
+Served asset /common.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 130.245.24.147 at 2011-10-27 08:55:53 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 130.245.24.147 at 2011-10-27 08:55:53 -0400
+Served asset /jquery.ui.core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 130.245.24.147 at 2011-10-27 08:55:53 -0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 130.245.24.147 at 2011-10-27 08:55:53 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/home/login" for 130.245.24.147 at 2011-10-27 08:56:00 -0400
+  Processing by HomeController#login as HTML
+  Parameters: {"email"=>"David.Hansson@gmail.com", "password"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (email='David.Hansson@gmail.com' AND password='123456') LIMIT 1[0m
+  [1m[35mApplication Load (0.3ms)[0m  SELECT `applications`.* FROM `applications` 
+  [1m[36mApplyYourself Load (0.4ms)[0m  [1mSELECT `apply_yourselves`.* FROM `apply_yourselves` WHERE `apply_yourselves`.`id` = 1 LIMIT 1[0m
+  [1m[35mApplyYourself Load (0.5ms)[0m  SELECT `apply_yourselves`.* FROM `apply_yourselves` WHERE `apply_yourselves`.`id` = 2 LIMIT 1
+Rendered home/view.html.erb within layouts/application (174.7ms)
+Completed 200 OK in 217ms (Views: 189.2ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 130.245.24.147 at 2011-10-27 08:56:01 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/app.css?body=1" for 130.245.24.147 at 2011-10-27 08:56:01 -0400
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/general.css?body=1" for 130.245.24.147 at 2011-10-27 08:56:01 -0400
+Served asset /general.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 130.245.24.147 at 2011-10-27 08:56:01 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 130.245.24.147 at 2011-10-27 08:56:01 -0400
+Served asset /profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 130.245.24.147 at 2011-10-27 08:56:01 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css?body=1" for 130.245.24.147 at 2011-10-27 08:56:01 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 130.245.24.147 at 2011-10-27 08:56:01 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 130.245.24.147 at 2011-10-27 08:56:01 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 130.245.24.147 at 2011-10-27 08:56:01 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.js?body=1" for 130.245.24.147 at 2011-10-27 08:56:01 -0400
+Served asset /common.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 130.245.24.147 at 2011-10-27 08:56:01 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 130.245.24.147 at 2011-10-27 08:56:01 -0400
+Served asset /jquery.ui.core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 130.245.24.147 at 2011-10-27 08:56:01 -0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 130.245.24.147 at 2011-10-27 08:56:01 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/home/css/general.css" for 130.245.24.147 at 2011-10-27 08:56:01 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/general.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/home/css/app.css" for 130.245.24.147 at 2011-10-27 08:56:01 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/app.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/home/css/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css" for 130.245.24.147 at 2011-10-27 08:56:01 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 130.245.24.147 at 2011-10-27 08:56:02 -0400
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-icons_ef8c08_256x240.png" for 130.245.24.147 at 2011-10-27 08:56:02 -0400
+Served asset /ui-lightness/images/ui-icons_ef8c08_256x240.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png" for 130.245.24.147 at 2011-10-27 08:56:02 -0400
+Served asset /ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png - 304 Not Modified (17ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 130.245.24.147 at 2011-10-27 08:56:02 -0400
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" for 130.245.24.147 at 2011-10-27 08:56:02 -0400
+Served asset /ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png - 304 Not Modified (0ms)
+
+
+Started POST "/home/search" for 130.245.24.147 at 2011-10-27 08:56:06 -0400
+  Processing by HomeController#search as HTML
+  Parameters: {"searchQuery"=>"alan"}
+WARNING: Can't verify CSRF token authenticity
+Redirected to http://130.245.128.113:3000/home/index
+Completed 500 Internal Server Error in 7ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/home_controller.rb:41:in `search'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+
+
+Started POST "/home/search" for 130.245.24.147 at 2011-10-27 09:24:17 -0400
+  Processing by HomeController#search as HTML
+  Parameters: {"searchQuery"=>"alan"}
+WARNING: Can't verify CSRF token authenticity
+Redirected to http://130.245.128.113:3000/home/index
+Completed 500 Internal Server Error in 7ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/home_controller.rb:41:in `search'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+
+
+Started GET "/" for 192.168.1.1 at 2011-10-27 09:24:26 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.1 at 2011-10-27 09:24:26 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/app.css?body=1" for 192.168.1.1 at 2011-10-27 09:24:27 -0400
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/general.css?body=1" for 192.168.1.1 at 2011-10-27 09:24:27 -0400
+Served asset /general.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 192.168.1.1 at 2011-10-27 09:24:27 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 192.168.1.1 at 2011-10-27 09:24:27 -0400
+Served asset /profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.1 at 2011-10-27 09:24:27 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css?body=1" for 192.168.1.1 at 2011-10-27 09:24:27 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 192.168.1.1 at 2011-10-27 09:24:27 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.1 at 2011-10-27 09:24:27 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.1 at 2011-10-27 09:24:27 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.js?body=1" for 192.168.1.1 at 2011-10-27 09:24:27 -0400
+Served asset /common.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.1.1 at 2011-10-27 09:24:27 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 192.168.1.1 at 2011-10-27 09:24:27 -0400
+Served asset /jquery.ui.core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 192.168.1.1 at 2011-10-27 09:24:27 -0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.1 at 2011-10-27 09:24:27 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/home/login" for 192.168.1.1 at 2011-10-27 09:26:11 -0400
+
+SyntaxError (/home/jiayu/Documents/GARS/app/controllers/home_controller.rb:61: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (18.0ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.9ms)
+
+
+Started POST "/home/login" for 192.168.1.1 at 2011-10-27 09:26:38 -0400
+  Processing by HomeController#login as HTML
+  Parameters: {"email"=>"David.Hansson@gmail.com", "password"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (email='David.Hansson@gmail.com' AND password='123456') LIMIT 1[0m
+  [1m[35mApplication Load (0.3ms)[0m  SELECT `applications`.* FROM `applications` 
+  [1m[36mApplyYourself Load (0.4ms)[0m  [1mSELECT `apply_yourselves`.* FROM `apply_yourselves` WHERE `apply_yourselves`.`id` = 1 LIMIT 1[0m
+  [1m[35mApplyYourself Load (0.5ms)[0m  SELECT `apply_yourselves`.* FROM `apply_yourselves` WHERE `apply_yourselves`.`id` = 2 LIMIT 1
+Rendered home/view.html.erb within layouts/application (179.9ms)
+Completed 200 OK in 222ms (Views: 195.1ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.1 at 2011-10-27 09:26:38 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/app.css?body=1" for 192.168.1.1 at 2011-10-27 09:26:38 -0400
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 192.168.1.1 at 2011-10-27 09:26:38 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/general.css?body=1" for 192.168.1.1 at 2011-10-27 09:26:38 -0400
+Served asset /general.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 192.168.1.1 at 2011-10-27 09:26:38 -0400
+Served asset /profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.1 at 2011-10-27 09:26:38 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css?body=1" for 192.168.1.1 at 2011-10-27 09:26:38 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 192.168.1.1 at 2011-10-27 09:26:38 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.1 at 2011-10-27 09:26:38 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.1 at 2011-10-27 09:26:38 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.1.1 at 2011-10-27 09:26:38 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.js?body=1" for 192.168.1.1 at 2011-10-27 09:26:38 -0400
+Served asset /common.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 192.168.1.1 at 2011-10-27 09:26:39 -0400
+Served asset /jquery.ui.core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 192.168.1.1 at 2011-10-27 09:26:39 -0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.1 at 2011-10-27 09:26:39 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/home/css/general.css" for 192.168.1.1 at 2011-10-27 09:26:39 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/general.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/home/css/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css" for 192.168.1.1 at 2011-10-27 09:26:39 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/home/css/app.css" for 192.168.1.1 at 2011-10-27 09:26:39 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/app.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 192.168.1.1 at 2011-10-27 09:26:39 -0400
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-icons_ef8c08_256x240.png" for 192.168.1.1 at 2011-10-27 09:26:39 -0400
+Served asset /ui-lightness/images/ui-icons_ef8c08_256x240.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" for 192.168.1.1 at 2011-10-27 09:26:39 -0400
+Served asset /ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 192.168.1.1 at 2011-10-27 09:26:39 -0400
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png" for 192.168.1.1 at 2011-10-27 09:26:39 -0400
+Served asset /ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png - 304 Not Modified (0ms)
+
+
+Started POST "/home/search" for 192.168.1.1 at 2011-10-27 09:26:45 -0400
+  Processing by HomeController#search as HTML
+  Parameters: {"searchQuery"=>"Alan"}
+WARNING: Can't verify CSRF token authenticity
+Redirected to http://130.245.128.113:3000/home/index
+Completed 302 Found in 2ms
+
+
+Started GET "/home/index" for 192.168.1.1 at 2011-10-27 09:26:46 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 22ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.1 at 2011-10-27 09:26:46 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/app.css?body=1" for 192.168.1.1 at 2011-10-27 09:26:46 -0400
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/general.css?body=1" for 192.168.1.1 at 2011-10-27 09:26:46 -0400
+Served asset /general.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 192.168.1.1 at 2011-10-27 09:26:46 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 192.168.1.1 at 2011-10-27 09:26:46 -0400
+Served asset /profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.1 at 2011-10-27 09:26:46 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css?body=1" for 192.168.1.1 at 2011-10-27 09:26:46 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 192.168.1.1 at 2011-10-27 09:26:46 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.1 at 2011-10-27 09:26:46 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.1 at 2011-10-27 09:26:46 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.js?body=1" for 192.168.1.1 at 2011-10-27 09:26:46 -0400
+Served asset /common.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 192.168.1.1 at 2011-10-27 09:26:46 -0400
+Served asset /jquery.ui.core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.1.1 at 2011-10-27 09:26:46 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 192.168.1.1 at 2011-10-27 09:26:46 -0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.1 at 2011-10-27 09:26:46 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/home/login" for 192.168.1.1 at 2011-10-27 09:26:58 -0400
+  Processing by HomeController#login as HTML
+  Parameters: {"email"=>"David.Hansson@gmail.com", "password"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (email='David.Hansson@gmail.com' AND password='123456') LIMIT 1[0m
+  [1m[35mApplication Load (0.3ms)[0m  SELECT `applications`.* FROM `applications` 
+  [1m[36mApplyYourself Load (0.4ms)[0m  [1mSELECT `apply_yourselves`.* FROM `apply_yourselves` WHERE `apply_yourselves`.`id` = 1 LIMIT 1[0m
+  [1m[35mApplyYourself Load (0.5ms)[0m  SELECT `apply_yourselves`.* FROM `apply_yourselves` WHERE `apply_yourselves`.`id` = 2 LIMIT 1
+Rendered home/view.html.erb within layouts/application (179.1ms)
+Completed 200 OK in 242ms (Views: 193.9ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.1 at 2011-10-27 09:26:59 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/app.css?body=1" for 192.168.1.1 at 2011-10-27 09:26:59 -0400
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 192.168.1.1 at 2011-10-27 09:26:59 -0400
+Served asset /profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 192.168.1.1 at 2011-10-27 09:26:59 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.1 at 2011-10-27 09:26:59 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/general.css?body=1" for 192.168.1.1 at 2011-10-27 09:26:59 -0400
+Served asset /general.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css?body=1" for 192.168.1.1 at 2011-10-27 09:26:59 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 192.168.1.1 at 2011-10-27 09:26:59 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.1 at 2011-10-27 09:26:59 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.1 at 2011-10-27 09:26:59 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.js?body=1" for 192.168.1.1 at 2011-10-27 09:26:59 -0400
+Served asset /common.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.1.1 at 2011-10-27 09:26:59 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 192.168.1.1 at 2011-10-27 09:26:59 -0400
+Served asset /jquery.ui.core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 192.168.1.1 at 2011-10-27 09:26:59 -0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.1 at 2011-10-27 09:26:59 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/home/css/general.css" for 192.168.1.1 at 2011-10-27 09:26:59 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/general.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/home/css/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css" for 192.168.1.1 at 2011-10-27 09:26:59 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/home/css/app.css" for 192.168.1.1 at 2011-10-27 09:26:59 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/app.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 192.168.1.1 at 2011-10-27 09:27:00 -0400
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-icons_ef8c08_256x240.png" for 192.168.1.1 at 2011-10-27 09:27:00 -0400
+Served asset /ui-lightness/images/ui-icons_ef8c08_256x240.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" for 192.168.1.1 at 2011-10-27 09:27:00 -0400
+Served asset /ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 192.168.1.1 at 2011-10-27 09:27:00 -0400
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started POST "/home/search" for 192.168.1.1 at 2011-10-27 09:27:02 -0400
+  Processing by HomeController#search as HTML
+  Parameters: {"searchQuery"=>""}
+WARNING: Can't verify CSRF token authenticity
+Redirected to http://130.245.128.113:3000/home/index
+Completed 302 Found in 2ms
+
+
+Started GET "/home/index" for 192.168.1.1 at 2011-10-27 09:27:02 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.1 at 2011-10-27 09:27:03 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/app.css?body=1" for 192.168.1.1 at 2011-10-27 09:27:03 -0400
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/general.css?body=1" for 192.168.1.1 at 2011-10-27 09:27:03 -0400
+Served asset /general.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 192.168.1.1 at 2011-10-27 09:27:03 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 192.168.1.1 at 2011-10-27 09:27:03 -0400
+Served asset /profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.1 at 2011-10-27 09:27:03 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css?body=1" for 192.168.1.1 at 2011-10-27 09:27:03 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 192.168.1.1 at 2011-10-27 09:27:03 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.1 at 2011-10-27 09:27:03 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.1 at 2011-10-27 09:27:03 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.js?body=1" for 192.168.1.1 at 2011-10-27 09:27:03 -0400
+Served asset /common.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 192.168.1.1 at 2011-10-27 09:27:03 -0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.1.1 at 2011-10-27 09:27:03 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 192.168.1.1 at 2011-10-27 09:27:03 -0400
+Served asset /jquery.ui.core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.1 at 2011-10-27 09:27:03 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/home/login" for 192.168.1.1 at 2011-10-27 09:46:16 -0400
+  Processing by HomeController#login as HTML
+  Parameters: {"email"=>"David.Hansson@gmail.com", "password"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+login starts here:
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (email='David.Hansson@gmail.com' AND password='123456') LIMIT 1[0m
+fetch the user object and render the view
+  [1m[35mApplication Load (0.3ms)[0m  SELECT `applications`.* FROM `applications` 
+  [1m[36mApplyYourself Load (0.4ms)[0m  [1mSELECT `apply_yourselves`.* FROM `apply_yourselves` WHERE `apply_yourselves`.`id` = 1 LIMIT 1[0m
+  [1m[35mApplyYourself Load (0.5ms)[0m  SELECT `apply_yourselves`.* FROM `apply_yourselves` WHERE `apply_yourselves`.`id` = 2 LIMIT 1
+Rendered home/view.html.erb within layouts/application (183.6ms)
+Completed 200 OK in 249ms (Views: 198.5ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.1 at 2011-10-27 09:46:16 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/app.css?body=1" for 192.168.1.1 at 2011-10-27 09:46:16 -0400
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/general.css?body=1" for 192.168.1.1 at 2011-10-27 09:46:16 -0400
+Served asset /general.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css?body=1" for 192.168.1.1 at 2011-10-27 09:46:16 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 192.168.1.1 at 2011-10-27 09:46:17 -0400
+Served asset /profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.1 at 2011-10-27 09:46:17 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 192.168.1.1 at 2011-10-27 09:46:17 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 192.168.1.1 at 2011-10-27 09:46:17 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.1 at 2011-10-27 09:46:17 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.1 at 2011-10-27 09:46:17 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.js?body=1" for 192.168.1.1 at 2011-10-27 09:46:17 -0400
+Served asset /common.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.1.1 at 2011-10-27 09:46:17 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 192.168.1.1 at 2011-10-27 09:46:17 -0400
+Served asset /jquery.ui.core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 192.168.1.1 at 2011-10-27 09:46:17 -0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.1 at 2011-10-27 09:46:17 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/home/css/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css" for 192.168.1.1 at 2011-10-27 09:46:17 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/home/css/general.css" for 192.168.1.1 at 2011-10-27 09:46:17 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/general.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/home/css/app.css" for 192.168.1.1 at 2011-10-27 09:46:17 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/app.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 192.168.1.1 at 2011-10-27 09:46:18 -0400
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-icons_ef8c08_256x240.png" for 192.168.1.1 at 2011-10-27 09:46:18 -0400
+Served asset /ui-lightness/images/ui-icons_ef8c08_256x240.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" for 192.168.1.1 at 2011-10-27 09:46:18 -0400
+Served asset /ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 192.168.1.1 at 2011-10-27 09:46:18 -0400
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png" for 192.168.1.1 at 2011-10-27 09:46:18 -0400
+Served asset /ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/home/profile" for 192.168.1.1 at 2011-10-27 09:46:19 -0400
+  Processing by HomeController#profile as HTML
+Rendered home/profile.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 33ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.1 at 2011-10-27 09:46:19 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/app.css?body=1" for 192.168.1.1 at 2011-10-27 09:46:19 -0400
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/general.css?body=1" for 192.168.1.1 at 2011-10-27 09:46:19 -0400
+Served asset /general.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.1 at 2011-10-27 09:46:20 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 192.168.1.1 at 2011-10-27 09:46:20 -0400
+Served asset /profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css?body=1" for 192.168.1.1 at 2011-10-27 09:46:20 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 192.168.1.1 at 2011-10-27 09:46:20 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 192.168.1.1 at 2011-10-27 09:46:20 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.1 at 2011-10-27 09:46:20 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.1 at 2011-10-27 09:46:20 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.js?body=1" for 192.168.1.1 at 2011-10-27 09:46:20 -0400
+Served asset /common.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.1.1 at 2011-10-27 09:46:20 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 192.168.1.1 at 2011-10-27 09:46:20 -0400
+Served asset /jquery.ui.core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 192.168.1.1 at 2011-10-27 09:46:20 -0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.1 at 2011-10-27 09:46:20 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 192.168.1.1 at 2011-10-27 09:46:20 -0400
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bachmair.jpg" for 192.168.1.1 at 2011-10-27 09:46:20 -0400
+Served asset /bachmair.jpg - 200 OK (8ms)
+
+
+Started GET "/" for 192.168.1.1 at 2011-10-27 09:47:10 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.1 at 2011-10-27 09:47:10 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/app.css?body=1" for 192.168.1.1 at 2011-10-27 09:47:10 -0400
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/general.css?body=1" for 192.168.1.1 at 2011-10-27 09:47:10 -0400
+Served asset /general.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 192.168.1.1 at 2011-10-27 09:47:10 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 192.168.1.1 at 2011-10-27 09:47:10 -0400
+Served asset /profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.1 at 2011-10-27 09:47:10 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css?body=1" for 192.168.1.1 at 2011-10-27 09:47:10 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 192.168.1.1 at 2011-10-27 09:47:10 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.1 at 2011-10-27 09:47:10 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.1 at 2011-10-27 09:47:10 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.js?body=1" for 192.168.1.1 at 2011-10-27 09:47:10 -0400
+Served asset /common.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.1.1 at 2011-10-27 09:47:10 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 192.168.1.1 at 2011-10-27 09:47:10 -0400
+Served asset /jquery.ui.core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 192.168.1.1 at 2011-10-27 09:47:10 -0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.1 at 2011-10-27 09:47:10 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/home/login" for 192.168.1.1 at 2011-10-27 09:47:20 -0400
+  Processing by HomeController#login as HTML
+  Parameters: {"email"=>"David.Hansson@gmail.com", "password"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+login starts here:
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (email='David.Hansson@gmail.com' AND password='123456') LIMIT 1[0m
+fetch the user object and render the view
+  [1m[35mApplication Load (0.3ms)[0m  SELECT `applications`.* FROM `applications` 
+  [1m[36mApplyYourself Load (0.4ms)[0m  [1mSELECT `apply_yourselves`.* FROM `apply_yourselves` WHERE `apply_yourselves`.`id` = 1 LIMIT 1[0m
+  [1m[35mApplyYourself Load (0.5ms)[0m  SELECT `apply_yourselves`.* FROM `apply_yourselves` WHERE `apply_yourselves`.`id` = 2 LIMIT 1
+Rendered home/view.html.erb within layouts/application (188.7ms)
+Completed 200 OK in 233ms (Views: 203.4ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.1 at 2011-10-27 09:47:20 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/general.css?body=1" for 192.168.1.1 at 2011-10-27 09:47:20 -0400
+Served asset /general.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app.css?body=1" for 192.168.1.1 at 2011-10-27 09:47:20 -0400
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 192.168.1.1 at 2011-10-27 09:47:20 -0400
+Served asset /profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.1 at 2011-10-27 09:47:20 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 192.168.1.1 at 2011-10-27 09:47:20 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css?body=1" for 192.168.1.1 at 2011-10-27 09:47:20 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 192.168.1.1 at 2011-10-27 09:47:20 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.1 at 2011-10-27 09:47:20 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.1 at 2011-10-27 09:47:20 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.js?body=1" for 192.168.1.1 at 2011-10-27 09:47:20 -0400
+Served asset /common.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.1.1 at 2011-10-27 09:47:20 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 192.168.1.1 at 2011-10-27 09:47:20 -0400
+Served asset /jquery.ui.core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 192.168.1.1 at 2011-10-27 09:47:20 -0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.1 at 2011-10-27 09:47:20 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/home/css/general.css" for 192.168.1.1 at 2011-10-27 09:47:21 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/general.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/home/css/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css" for 192.168.1.1 at 2011-10-27 09:47:21 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/home/css/app.css" for 192.168.1.1 at 2011-10-27 09:47:21 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/app.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 192.168.1.1 at 2011-10-27 09:47:21 -0400
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-icons_ef8c08_256x240.png" for 192.168.1.1 at 2011-10-27 09:47:21 -0400
+Served asset /ui-lightness/images/ui-icons_ef8c08_256x240.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" for 192.168.1.1 at 2011-10-27 09:47:21 -0400
+Served asset /ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 192.168.1.1 at 2011-10-27 09:47:21 -0400
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png" for 192.168.1.1 at 2011-10-27 09:47:22 -0400
+Served asset /ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-icons_222222_256x240.png" for 192.168.1.1 at 2011-10-27 09:47:27 -0400
+Served asset /ui-lightness/images/ui-icons_222222_256x240.png - 200 OK (3ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png" for 192.168.1.1 at 2011-10-27 09:47:27 -0400
+Served asset /ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-icons_ffffff_256x240.png" for 192.168.1.1 at 2011-10-27 09:47:27 -0400
+Served asset /ui-lightness/images/ui-icons_ffffff_256x240.png - 200 OK (3ms)
+
+
+Started POST "/home/search" for 192.168.1.1 at 2011-10-27 09:49:43 -0400
+  Processing by HomeController#search as HTML
+  Parameters: {"searchQuery"=>"Alan"}
+WARNING: Can't verify CSRF token authenticity
+User not login
+Redirected to http://130.245.128.113:3000/home/index
+Completed 302 Found in 2ms
+
+
+Started GET "/home/index" for 192.168.1.1 at 2011-10-27 09:49:44 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.1 at 2011-10-27 09:49:44 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/app.css?body=1" for 192.168.1.1 at 2011-10-27 09:49:44 -0400
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/general.css?body=1" for 192.168.1.1 at 2011-10-27 09:49:44 -0400
+Served asset /general.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 192.168.1.1 at 2011-10-27 09:49:44 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 192.168.1.1 at 2011-10-27 09:49:44 -0400
+Served asset /profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.1 at 2011-10-27 09:49:44 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css?body=1" for 192.168.1.1 at 2011-10-27 09:49:44 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 192.168.1.1 at 2011-10-27 09:49:44 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.1 at 2011-10-27 09:49:44 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.1 at 2011-10-27 09:49:44 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.js?body=1" for 192.168.1.1 at 2011-10-27 09:49:44 -0400
+Served asset /common.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.1.1 at 2011-10-27 09:49:44 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 192.168.1.1 at 2011-10-27 09:49:44 -0400
+Served asset /jquery.ui.core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 192.168.1.1 at 2011-10-27 09:49:44 -0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.1 at 2011-10-27 09:49:44 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/home/login" for 192.168.1.1 at 2011-10-27 10:03:38 -0400
+  Processing by HomeController#login as HTML
+  Parameters: {"email"=>"David.Hansson@gmail.com", "password"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+login starts here:
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (email='David.Hansson@gmail.com' AND password='123456') LIMIT 1[0m
+fetch the user object and render the view
+Completed 500 Internal Server Error in 119ms
+
+NoMethodError (undefined method `redrect_to' for #<HomeController:0x9cb50bc>):
+  app/controllers/home_controller.rb:21:in `login'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.8ms)
+
+
+Started POST "/home/login" for 192.168.1.1 at 2011-10-27 10:04:07 -0400
+  Processing by HomeController#login as HTML
+  Parameters: {"email"=>"David.Hansson@gmail.com", "password"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+login starts here:
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (email='David.Hansson@gmail.com' AND password='123456') LIMIT 1
+fetch the user object and render the view
+Redirected to http://130.245.128.113:3000/home/view
+Completed 302 Found in 29ms
+
+
+Started GET "/home/view" for 192.168.1.1 at 2011-10-27 10:04:07 -0400
+  Processing by HomeController#view as HTML
+  [1m[36mApplication Load (0.2ms)[0m  [1mSELECT `applications`.* FROM `applications` [0m
+  [1m[35mApplyYourself Load (0.4ms)[0m  SELECT `apply_yourselves`.* FROM `apply_yourselves` WHERE `apply_yourselves`.`id` = 1 LIMIT 1
+  [1m[36mApplyYourself Load (0.5ms)[0m  [1mSELECT `apply_yourselves`.* FROM `apply_yourselves` WHERE `apply_yourselves`.`id` = 2 LIMIT 1[0m
+Rendered home/view.html.erb within layouts/application (134.2ms)
+Completed 200 OK in 176ms (Views: 148.8ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.1 at 2011-10-27 10:04:07 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/app.css?body=1" for 192.168.1.1 at 2011-10-27 10:04:07 -0400
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/general.css?body=1" for 192.168.1.1 at 2011-10-27 10:04:08 -0400
+Served asset /general.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.css?body=1" for 192.168.1.1 at 2011-10-27 10:04:08 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.1 at 2011-10-27 10:04:08 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 192.168.1.1 at 2011-10-27 10:04:08 -0400
+Served asset /profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css?body=1" for 192.168.1.1 at 2011-10-27 10:04:08 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 192.168.1.1 at 2011-10-27 10:04:08 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.1 at 2011-10-27 10:04:08 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.1 at 2011-10-27 10:04:08 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.js?body=1" for 192.168.1.1 at 2011-10-27 10:04:08 -0400
+Served asset /common.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.1.1 at 2011-10-27 10:04:08 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 192.168.1.1 at 2011-10-27 10:04:08 -0400
+Served asset /jquery.ui.core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 192.168.1.1 at 2011-10-27 10:04:08 -0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.1 at 2011-10-27 10:04:08 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/home/css/general.css" for 192.168.1.1 at 2011-10-27 10:04:08 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/general.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/home/css/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css" for 192.168.1.1 at 2011-10-27 10:04:08 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/home/css/app.css" for 192.168.1.1 at 2011-10-27 10:04:08 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/app.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 192.168.1.1 at 2011-10-27 10:04:09 -0400
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-icons_ef8c08_256x240.png" for 192.168.1.1 at 2011-10-27 10:04:09 -0400
+Served asset /ui-lightness/images/ui-icons_ef8c08_256x240.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" for 192.168.1.1 at 2011-10-27 10:04:09 -0400
+Served asset /ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 192.168.1.1 at 2011-10-27 10:04:09 -0400
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png" for 192.168.1.1 at 2011-10-27 10:04:10 -0400
+Served asset /ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png - 304 Not Modified (0ms)
+
+
+Started POST "/home/search" for 192.168.1.1 at 2011-10-27 10:04:12 -0400
+  Processing by HomeController#search as HTML
+  Parameters: {"searchQuery"=>"a"}
+WARNING: Can't verify CSRF token authenticity
+User not login
+Redirected to http://130.245.128.113:3000/home/index
+Completed 302 Found in 2ms
+
+
+Started GET "/home/index" for 192.168.1.1 at 2011-10-27 10:04:12 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.1 at 2011-10-27 10:04:12 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/app.css?body=1" for 192.168.1.1 at 2011-10-27 10:04:12 -0400
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/general.css?body=1" for 192.168.1.1 at 2011-10-27 10:04:12 -0400
+Served asset /general.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 192.168.1.1 at 2011-10-27 10:04:12 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 192.168.1.1 at 2011-10-27 10:04:12 -0400
+Served asset /profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.1 at 2011-10-27 10:04:12 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css?body=1" for 192.168.1.1 at 2011-10-27 10:04:12 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 192.168.1.1 at 2011-10-27 10:04:12 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.1 at 2011-10-27 10:04:12 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.1 at 2011-10-27 10:04:12 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.js?body=1" for 192.168.1.1 at 2011-10-27 10:04:12 -0400
+Served asset /common.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.1.1 at 2011-10-27 10:04:12 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 192.168.1.1 at 2011-10-27 10:04:12 -0400
+Served asset /jquery.ui.core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 192.168.1.1 at 2011-10-27 10:04:12 -0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.1 at 2011-10-27 10:04:12 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/home/login" for 192.168.1.1 at 2011-10-27 10:04:14 -0400
+  Processing by HomeController#login as HTML
+  Parameters: {"email"=>"David.Hansson@gmail.com", "password"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+login starts here:
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (email='David.Hansson@gmail.com' AND password='123456') LIMIT 1
+fetch the user object and render the view
+Redirected to http://130.245.128.113:3000/home/view
+Completed 302 Found in 28ms
+
+
+Started GET "/home/view" for 192.168.1.1 at 2011-10-27 10:04:14 -0400
+  Processing by HomeController#view as HTML
+  [1m[36mApplication Load (0.2ms)[0m  [1mSELECT `applications`.* FROM `applications` [0m
+  [1m[35mApplyYourself Load (0.4ms)[0m  SELECT `apply_yourselves`.* FROM `apply_yourselves` WHERE `apply_yourselves`.`id` = 1 LIMIT 1
+  [1m[36mApplyYourself Load (0.5ms)[0m  [1mSELECT `apply_yourselves`.* FROM `apply_yourselves` WHERE `apply_yourselves`.`id` = 2 LIMIT 1[0m
+Rendered home/view.html.erb within layouts/application (185.4ms)
+Completed 200 OK in 227ms (Views: 199.8ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.1 at 2011-10-27 10:04:14 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/app.css?body=1" for 192.168.1.1 at 2011-10-27 10:04:14 -0400
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/general.css?body=1" for 192.168.1.1 at 2011-10-27 10:04:14 -0400
+Served asset /general.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.1 at 2011-10-27 10:04:14 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 192.168.1.1 at 2011-10-27 10:04:14 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 192.168.1.1 at 2011-10-27 10:04:14 -0400
+Served asset /profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css?body=1" for 192.168.1.1 at 2011-10-27 10:04:14 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 192.168.1.1 at 2011-10-27 10:04:14 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.1 at 2011-10-27 10:04:14 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.1 at 2011-10-27 10:04:14 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.js?body=1" for 192.168.1.1 at 2011-10-27 10:04:14 -0400
+Served asset /common.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.1.1 at 2011-10-27 10:04:15 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 192.168.1.1 at 2011-10-27 10:04:15 -0400
+Served asset /jquery.ui.core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 192.168.1.1 at 2011-10-27 10:04:15 -0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.1 at 2011-10-27 10:04:15 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/home/css/general.css" for 192.168.1.1 at 2011-10-27 10:04:15 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/general.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/home/css/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css" for 192.168.1.1 at 2011-10-27 10:04:15 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/home/css/app.css" for 192.168.1.1 at 2011-10-27 10:04:15 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/app.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 192.168.1.1 at 2011-10-27 10:04:15 -0400
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" for 192.168.1.1 at 2011-10-27 10:04:15 -0400
+Served asset /ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-icons_ef8c08_256x240.png" for 192.168.1.1 at 2011-10-27 10:04:15 -0400
+Served asset /ui-lightness/images/ui-icons_ef8c08_256x240.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 192.168.1.1 at 2011-10-27 10:04:15 -0400
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png" for 192.168.1.1 at 2011-10-27 10:06:17 -0400
+Served asset /ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 130.245.20.154 at 2011-10-27 11:25:56 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 22ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 130.245.20.154 at 2011-10-27 11:25:56 -0400
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/app.css?body=1" for 130.245.20.154 at 2011-10-27 11:25:56 -0400
+Served asset /app.css - 200 OK (0ms)
+
+
+Started GET "/assets/general.css?body=1" for 130.245.20.154 at 2011-10-27 11:25:56 -0400
+Served asset /general.css - 200 OK (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 130.245.20.154 at 2011-10-27 11:25:56 -0400
+Served asset /home.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 130.245.20.154 at 2011-10-27 11:25:56 -0400
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 130.245.20.154 at 2011-10-27 11:25:56 -0400
+Served asset /profile.css - 200 OK (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css?body=1" for 130.245.20.154 at 2011-10-27 11:25:56 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css - 200 OK (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 130.245.20.154 at 2011-10-27 11:25:56 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 130.245.20.154 at 2011-10-27 11:25:56 -0400
+Served asset /jquery.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 130.245.20.154 at 2011-10-27 11:25:56 -0400
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/common.js?body=1" for 130.245.20.154 at 2011-10-27 11:25:56 -0400
+Served asset /common.js - 200 OK (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 130.245.20.154 at 2011-10-27 11:25:56 -0400
+Served asset /home.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 130.245.20.154 at 2011-10-27 11:25:56 -0400
+Served asset /jquery.ui.core.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 130.245.20.154 at 2011-10-27 11:25:56 -0400
+Served asset /jquery.ui.widget.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 130.245.20.154 at 2011-10-27 11:25:56 -0400
+Served asset /application.js - 200 OK (1ms)
+
+
+Started POST "/home/login" for 130.245.20.154 at 2011-10-27 11:26:41 -0400
+  Processing by HomeController#login as HTML
+  Parameters: {"email"=>"Steve@gmail.com", "password"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+login starts here:
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (email='Steve@gmail.com' AND password='654321') LIMIT 1
+fetch the user object and render the view
+Redirected to http://130.245.128.113:3000/home/view
+Completed 302 Found in 82ms
+
+
+Started GET "/home/view" for 130.245.20.154 at 2011-10-27 11:26:41 -0400
+  Processing by HomeController#view as HTML
+  [1m[36mApplication Load (0.5ms)[0m  [1mSELECT `applications`.* FROM `applications` INNER JOIN `application_reviews` ON `application_reviews`.`application_id` = `applications`.`id` INNER JOIN `users` ON `users`.`id` = `application_reviews`.`user_id` WHERE (users.id=2)[0m
+  [1m[35mApplyYourself Load (0.4ms)[0m  SELECT `apply_yourselves`.* FROM `apply_yourselves` WHERE `apply_yourselves`.`id` = 2 LIMIT 1
+  [1m[36mApplyYourself Load (0.5ms)[0m  [1mSELECT `apply_yourselves`.* FROM `apply_yourselves` WHERE `apply_yourselves`.`id` = 1 LIMIT 1[0m
+Rendered home/view.html.erb within layouts/application (263.9ms)
+Completed 200 OK in 328ms (Views: 275.0ms | ActiveRecord: 12.8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 130.245.20.154 at 2011-10-27 11:26:42 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 130.245.20.154 at 2011-10-27 11:26:42 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 130.245.20.154 at 2011-10-27 11:26:42 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app.css?body=1" for 130.245.20.154 at 2011-10-27 11:26:42 -0400
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 130.245.20.154 at 2011-10-27 11:26:42 -0400
+Served asset /profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/general.css?body=1" for 130.245.20.154 at 2011-10-27 11:26:42 -0400
+Served asset /general.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css?body=1" for 130.245.20.154 at 2011-10-27 11:26:42 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 130.245.20.154 at 2011-10-27 11:26:42 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 130.245.20.154 at 2011-10-27 11:26:42 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 130.245.20.154 at 2011-10-27 11:26:42 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.js?body=1" for 130.245.20.154 at 2011-10-27 11:26:42 -0400
+Served asset /common.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 130.245.20.154 at 2011-10-27 11:26:42 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 130.245.20.154 at 2011-10-27 11:26:42 -0400
+Served asset /jquery.ui.core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 130.245.20.154 at 2011-10-27 11:26:42 -0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 130.245.20.154 at 2011-10-27 11:26:42 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/home/css/general.css" for 130.245.20.154 at 2011-10-27 11:26:42 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/general.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/home/css/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css" for 130.245.20.154 at 2011-10-27 11:26:42 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/home/css/app.css" for 130.245.20.154 at 2011-10-27 11:26:42 -0400
+
+ActionController::RoutingError (No route matches [GET] "/home/css/app.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 130.245.20.154 at 2011-10-27 11:26:43 -0400
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 200 OK (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-icons_ef8c08_256x240.png" for 130.245.20.154 at 2011-10-27 11:26:43 -0400
+Served asset /ui-lightness/images/ui-icons_ef8c08_256x240.png - 200 OK (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" for 130.245.20.154 at 2011-10-27 11:26:43 -0400
+Served asset /ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png - 200 OK (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 130.245.20.154 at 2011-10-27 11:26:43 -0400
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 200 OK (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png" for 130.245.20.154 at 2011-10-27 11:26:44 -0400
+Served asset /ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png - 200 OK (0ms)
+
+
+Started POST "/home/search" for 130.245.20.154 at 2011-10-27 11:27:02 -0400
+  Processing by HomeController#search as HTML
+  Parameters: {"searchQuery"=>"Steve"}
+WARNING: Can't verify CSRF token authenticity
+User not login
+Redirected to http://130.245.128.113:3000/home/index
+Completed 302 Found in 2ms
+
+
+Started GET "/home/index" for 130.245.20.154 at 2011-10-27 11:27:02 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 130.245.20.154 at 2011-10-27 11:27:02 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/app.css?body=1" for 130.245.20.154 at 2011-10-27 11:27:02 -0400
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/general.css?body=1" for 130.245.20.154 at 2011-10-27 11:27:02 -0400
+Served asset /general.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 130.245.20.154 at 2011-10-27 11:27:02 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 130.245.20.154 at 2011-10-27 11:27:02 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 130.245.20.154 at 2011-10-27 11:27:02 -0400
+Served asset /profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css?body=1" for 130.245.20.154 at 2011-10-27 11:27:02 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 130.245.20.154 at 2011-10-27 11:27:02 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 130.245.20.154 at 2011-10-27 11:27:02 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 130.245.20.154 at 2011-10-27 11:27:02 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.js?body=1" for 130.245.20.154 at 2011-10-27 11:27:02 -0400
+Served asset /common.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 130.245.20.154 at 2011-10-27 11:27:02 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 130.245.20.154 at 2011-10-27 11:27:02 -0400
+Served asset /jquery.ui.core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 130.245.20.154 at 2011-10-27 11:27:02 -0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 130.245.20.154 at 2011-10-27 11:27:02 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 130.245.24.147 at 2011-10-27 15:17:37 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 130.245.24.147 at 2011-10-27 15:17:37 -0400
+Served asset /app.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 130.245.24.147 at 2011-10-27 15:17:37 -0400
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/general.css?body=1" for 130.245.24.147 at 2011-10-27 15:17:37 -0400
+Served asset /general.css - 200 OK (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 130.245.24.147 at 2011-10-27 15:17:37 -0400
+Served asset /home.css - 200 OK (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css?body=1" for 130.245.24.147 at 2011-10-27 15:17:37 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom%20-%20Copy.css - 200 OK (0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 130.245.24.147 at 2011-10-27 15:17:37 -0400
+Served asset /profile.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 130.245.24.147 at 2011-10-27 15:17:37 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 130.245.24.147 at 2011-10-27 15:17:37 -0400
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 130.245.24.147 at 2011-10-27 15:17:37 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 130.245.24.147 at 2011-10-27 15:17:37 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.js?body=1" for 130.245.24.147 at 2011-10-27 15:17:37 -0400
+Served asset /common.js - 200 OK (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 130.245.24.147 at 2011-10-27 15:17:37 -0400
+Served asset /home.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 130.245.24.147 at 2011-10-27 15:17:37 -0400
+Served asset /jquery.ui.core.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 130.245.24.147 at 2011-10-27 15:17:37 -0400
+Served asset /jquery.ui.widget.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 130.245.24.147 at 2011-10-27 15:17:38 -0400
+Served asset /application.js - 200 OK (1ms)
+
+
+Started POST "/home/login" for 130.245.24.147 at 2011-10-27 15:21:11 -0400
+  Processing by HomeController#login as HTML
+  Parameters: {"email"=>"Steve@gmail.com", "password"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+login starts here:
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (email='Steve@gmail.com' AND password='654321') LIMIT 1
+fetch the user object and render the view
+Redirected to http://130.245.128.113:3000/home/view
+Completed 302 Found in 80ms
+
+
+Started GET "/home/view" for 130.245.24.147 at 2011-10-27 15:21:11 -0400
+  Processing by HomeController#view as HTML
+  [1m[36mApplication Load (0.2ms)[0m  [1mSELECT `applications`.* FROM `applications` INNER JOIN `application_reviews` ON `application_reviews`.`application_id` = `applications`.`id` INNER JOIN `users` ON `users`.`id` = `application_reviews`.`user_id` WHERE (users.id=2)[0m
+  [1m[35mApplyYourself Load (0.4ms)[0m  SELECT `apply_yourselves`.* FROM `apply_yourselves` WHERE `apply_yourselves`.`id` = 2 LIMIT 1
+  [1m[36mApplyYourself Load (0.4ms)[0m  [1mSELECT `apply_yourselves`.* FROM `apply_yourselves` WHERE `apply_yourselves`.`id` = 1 LIMIT 1[0m
+Rendered home/view.html.erb within layouts/application (200.0ms)
+Completed 200 OK in 234ms (Views: 207.6ms | ActiveRecord: 11.8ms)

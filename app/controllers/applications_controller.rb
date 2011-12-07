@@ -9,6 +9,22 @@ class ApplicationsController < ApplicationController
       format.xml  { render :xml => @applications }
     end
   end
+  
+  def make_decision
+    app_id = params[:id]
+    decision = params[:decision]
+    if decision == 'Accept'
+      # do something
+      redirect_to "/applications/" + app_id.to_s()
+    elsif
+      redirect_to "/applications/" + app_id.to_s()	
+    end
+  end
+
+  def get_app
+    @application = Application.find(params[:id])
+    render @application
+  end
 
   # GET /applications/1
   # GET /applications/1.xml

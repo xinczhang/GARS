@@ -1,0 +1,69 @@
+<% content_for :head do %>
+	 <script type='text/javascript'>
+		$(document).ready(function() {
+			$('td input:text').keyup(function() {
+				keyup_handler(this);				
+			});
+			$('td textarea').keyup(function() {
+				keyup_handler(this);			
+			});
+		});
+		
+		function keyup_handler(obj) {
+			var id = $(obj).attr('class');
+			var n = $(obj).attr('name');
+			var v = $(obj).attr('value');
+			path = "/reviews/update_review";
+			update_field(path, id, n, v);	
+		}
+
+		function update_field(path, id,n, v) {
+			$.ajax({
+			  type: "GET",
+			  url: path,
+			  data: "id=" + id + "&name=" + n + "&value=" + v,
+			});
+		}
+	</script>
+<% end %>
+
+
+<table>
+	<tr>
+		<td colspan='2'>
+			Applicant name: <b><%= @app_name %><br/></b>
+		</td>
+	</tr>
+	<% if @reviews.length == 0 %>
+		<tr><td>This application has no reviews so far</td></tr>
+	<% else %>	
+<% @reviews.each do |r| %>
+		<tr>
+			<td colspan=2>
+			<label>Reviewer: <b><%= r.user.name %></b> </label>
+	<% if r.submitted == 1 %>
+		<div style="width: 15px; height:15px; background-color:#93d694; margin-top: 0px; margin-left: 2px;margin-right: 5px; display:inline-block"></div>
+	<% else %>
+			<div style="width: 15px; height:15px; background-color:red; margin-top:0px; margin-left: 2px;margin-right: 5px; display:inline-block"></div>
+	<% end %>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<label>Rating:</label>
+			</td>
+			<td>
+			<input class="<%= r.id %>" type='text' name='rating' value="<%= r.rating %>" />
+		</tr>
+		<tr>
+			</td>		
+			<td valign='top' style='padding-top:5px'>
+			<label>Review:</label>
+			</td>
+			<td>
+			<textarea class="<%= r.id %>" name='review' cols="110" rows="7"><%= r.review %></textarea>
+			</td>
+		</tr>
+<% end %>
+<% end %>
+</table>

@@ -1,7 +1,37 @@
+<%= content_for :head do %>
+<script type='text/javascript'>
+	$(document).ready(function() {
+			$(".section .header").click(function() {
+				
+				var className = $(this).parent().attr("class");
+				if (className.indexOf('nocollapsing') != -1)
+					return;
+
+				if (className.indexOf('expanded') == -1) {
+					$(this).parent().attr('class', 'section expanded');
+				}
+				else {
+					$(this).parent().attr('class', 'section collapsed');
+				}
+				
+			});
+			$(".section").attr('class', 'section expanded');
+	});
+</script>
+<% end %>
+
 <p id="notice"><%= notice %></p>
+
+<% if @is_admin %>
+	<%= form_tag("/applications/make_decision") do %>
+		<input type='hidden' value='<%= @application.id %>' name='id' />
+		<label><b>Make Decision:</b></label>
+		<input type='submit' value='Accept' name='decision' />
+		<input type='submit' value='Reject' name='decision' />	
+	<% end %>
+<% end %>
 
 <%= render @application %>
 
 
-<%= link_to 'Edit', edit_application_path(@application) %> |
-<%= link_to 'Back', applications_path %>
+

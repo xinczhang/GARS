@@ -46,9 +46,8 @@
 			
 			<ul id="navBar">
 				<li><span id='uname'><%= @uname %></span></li>
+                                <li><%= link_to 'Applications', view_table_view_path, :class => 'jqBtn' %></li>
 				<% if @is_admin %>
-					<li><%= link_to 'Applications', view_table_view_path, :class => 'jqBtn' %></li>
-					<li><%= link_to 'Round Schedule', home_round_path, :class => 'jqBtn' %></li>
 					<li><%= link_to 'Upload', home_upload_path, :class => 'jqBtn', :id=>'upload_tab' %></li>
 				<% end %>
 				<li><%= link_to 'Review', home_reviews_path, :class => 'jqBtn' %></li>
@@ -60,6 +59,10 @@
     <div id="content">
 		<%= yield %>
 	</div>
+
+   <div id='footer'>
+     GARS
+   </div>
 </div>
 
 

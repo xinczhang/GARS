@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111116024734) do
+ActiveRecord::Schema.define(:version => 20111207045547) do
 
   create_table "application_reviews", :id => false, :force => true do |t|
     t.integer "application_id"
@@ -24,6 +24,10 @@ ActiveRecord::Schema.define(:version => 20111116024734) do
     t.integer  "official_test_score_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "pdf_submitted",          :default => 0
+    t.integer  "assigned",               :default => 0
+    t.integer  "status",                 :default => 0
+    t.string   "program",                :default => "master"
   end
 
   create_table "apply_yourselves", :force => true do |t|
@@ -70,11 +74,11 @@ ActiveRecord::Schema.define(:version => 20111116024734) do
     t.float    "ug_GPA5"
     t.string   "grad_inst"
     t.float    "grad_GPA"
-    t.integer  "grad_scale",             :null => false
+    t.integer  "grad_scale"
     t.float    "grad_GPA1"
     t.float    "grad_GPA2"
     t.string   "theory_course_title"
-    t.integer  "theory_scale",           :null => false
+    t.integer  "theory_scale"
     t.float    "theory_grade"
     t.float    "theory_SBU_equiv"
     t.string   "algorithm_course_title"
@@ -126,8 +130,9 @@ ActiveRecord::Schema.define(:version => 20111116024734) do
     t.datetime "updated_at"
   end
 
-  create_table "research_areas", :primary_key => "code", :force => true do |t|
-    t.string "name", :null => false
+  create_table "research_areas", :id => false, :force => true do |t|
+    t.string "code", :limit => 10, :null => false
+    t.string "name",               :null => false
   end
 
   add_index "research_areas", ["code"], :name => "index_research_areas_on_code", :unique => true
@@ -138,9 +143,10 @@ ActiveRecord::Schema.define(:version => 20111116024734) do
   end
 
   create_table "reviews", :force => true do |t|
-    t.text     "review",    :null => false
-    t.integer  "rating",    :null => false
-    t.datetime "timestamp", :null => false
+    t.text     "review",                   :null => false
+    t.integer  "rating",                   :null => false
+    t.datetime "timestamp",                :null => false
+    t.integer  "submitted", :default => 0
   end
 
   create_table "rounds", :force => true do |t|
@@ -149,13 +155,15 @@ ActiveRecord::Schema.define(:version => 20111116024734) do
   end
 
   create_table "users", :force => true do |t|
-    t.string   "name",       :limit => 20, :null => false
-    t.string   "email",                    :null => false
-    t.string   "password",                 :null => false
-    t.integer  "sex",                      :null => false
-    t.integer  "role",                     :null => false
+    t.string   "name",       :limit => 20,                  :null => false
+    t.string   "email",                                     :null => false
+    t.string   "password",                                  :null => false
+    t.integer  "sex",                                       :null => false
+    t.integer  "role",                                      :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "country"
+    t.float    "workload",                 :default => 1.0
   end
 
 end

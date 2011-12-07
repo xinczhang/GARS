@@ -9,12 +9,6 @@
 
 	<a href="#" id="expandBtn">Expand</a>
 	<a href="#" class="jqBtn" id="assignBtn">Assign Reviewer</a>	
-	<select id="roundSelector" onChange="changeRound()">
-                <option value="0">Show All</option>
-                <option value="1">Round 1</option>
-                <option value="2">Round 2</option>
-                <option value="-1">Current Round</option>
-    </select>
 	<div>
 		<input type="checkbox" class="dialogTrigger" id="filterBtn">
 		<label for="filterBtn">Filter</label>
@@ -47,11 +41,9 @@
 				<div class="appHeaderTitle">
 					<% appName = "#{ay.first_name + ' ' + ay.last_name}" %>
 					<%= link_to appName, app, :class=>"appName" %>
-					(<a class="appPDFLink" href="#">PDF</a>)
+					 <%= link_to 'PDF', pdf_path(".pdf"), :class=>"appPDFLink" %>
 				</div>
-				
-				<span class="appSchool"><%=ay.ug_inst %></span>,
-				<span class="appCountry"><%=ay.citizenship%></span>
+				<%= fields_display_helper ay, ots%>
 			</div>
 			<div class="appContent" style="display: none;">
 				<%= render app %>

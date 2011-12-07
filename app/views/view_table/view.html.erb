@@ -8,13 +8,18 @@
     </div>
 
 	<a href="#" id="expandBtn">Expand</a>
-	<a href="#" class="jqBtn" id="assignBtn">Assign Reviewer</a>	
-	<select id="roundSelector" onChange="changeRound()">
-                <option value="0">Show All</option>
-                <option value="1">Round 1</option>
-                <option value="2">Round 2</option>
-                <option value="-1">Current Round</option>
-    </select>
+	<% if @manual_assign_btn_visible %>
+	<a href="#" class="jqBtn" id="assignBtn">Manual Assign</a>
+	<% end %>
+
+	<% if @auto_assign_btn_visible %>
+	<div>
+		<input type='checkbox' class='dialogTrigger' id='autoAssignBtn'>
+		<label for='autoAssignBtn'>Auto Assign</label>
+		<%= auto_assign_reviews_dialog_helper %>
+	</div>
+	<a href="/view_table/view?auto_assign=0" class="jqBtn" id='unassignBtn'> Unassign</a>
+	<% end %>
 	<div>
 		<input type="checkbox" class="dialogTrigger" id="filterBtn">
 		<label for="filterBtn">Filter</label>
@@ -26,35 +31,34 @@
 		<%= sort_dialog_helper %>
 	</div>
 	<a href="#" id="addRemoveFieldsBtn" class="jqBtn">Add/Remove fields</a>
-
-    <div class="pagination">
-		<%= link_to 'Prev', {:page=>@prev_page}, {:class=>'jqBtn'} %>
-		<%= link_to 'Next', {:page=>@next_page}, {:class=>'jqBtn'} %>
-	</div>
+	
+	<%= will_paginate @applications, :page_links => false, :previous_label=>'Prev', :next_label=>'Next', :params => @paging_params %>
 </div>
 
 <div id="displayAppsArea">	
-
 <% @applications.each do |app| %>
 	<% ay = app.apply_yourself %>
 	<div class="appWrapper">
 		<div class="appControls">
 			<input type="checkbox" class="selectAppCB"/>
-			<a href="#" class="expandAppBtn">Expand</a>
+			<a href="#" class="expandAppBtn" rel="first_time <%= app.id %>">Expand</a>
 		</div>
 		<div class="appArea">
 			<div class="appHeader">
 				<div class="appHeaderTitle">
 					<% appName = "#{ay.first_name + ' ' + ay.last_name}" %>
 					<%= link_to appName, app, :class=>"appName" %>
-					(<a class="appPDFLink" href="#">PDF</a>)
+					<% if (app.pdf_submitted == 1) %>
+					(<%= link_to 'PDF', "/data/pdf/" + ay.email_address+".pdf", :class=>"appPDFLink" %>)
+					<% else %>
+					(<%= link_to 'PDF', "#", :class=>"appPDFLink" %>)
+					<% end %>
 				</div>
 				
-				<span class="appSchool"><%=ay.ug_inst %></span>,
-				<span class="appCountry"><%=ay.citizenship%></span>
+				<%= fields_display_helper app.apply_yourself, app.official_test_score%>
 			</div>
 			<div class="appContent" style="display: none;">
-				<%= render app %>
+				
 			</div>	
 		</div>
 	</div>
@@ -64,4 +68,5 @@
 
 <%= remove_fields_dialog_helper %>
 <%= assign_reviews_dialog_helper %>
+
 

@@ -14,6 +14,36 @@ class ReviewsController < ApplicationController
 	end
   end
 
+  def post_review
+    r = Review.find(params[:id])
+    submit_val = params[:submit]
+    if (submit_val == 'Submit')
+      r.submitted = 1
+    end
+    r.review = params[:review]
+    r.rating = params[:rating]
+    r.save
+    redirect_to home_reviews_path
+  end
+
+
+  def update_review
+    @review = Review.find(params[:id])
+    n = params[:name]
+    v = params[:value]
+    @review.send(:"#{n}=", v)
+    @review.save
+  end
+
+  # edit reviews associated with an application
+  def edit_reviews
+    @app = Application.find(params[:id])
+    @ay = @app.apply_yourself
+    @app_name = @ay.first_name + ' ' + @ay.last_name
+    @reviews = @app.reviews  
+  end
+
+
 
   # GET /applications
   # GET /applications.xml
@@ -69,21 +99,6 @@ class ReviewsController < ApplicationController
     end
   end
 
-  # PUT /applications/1
-  # PUT /applications/1.xml
-  def update
-    @application = Review.find(params[:id])
-
-    respond_to do |format|
-      if @application.update_attributes(params[:application])
-        format.html { redirect_to(@application, :notice => 'Application was successfully updated.') }
-        format.xml  { head :ok }
-      else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @application.errors, :status => :unprocessable_entity }
-      end
-    end
-  end
 
   # DELETE /applications/1
   # DELETE /applications/1.xml

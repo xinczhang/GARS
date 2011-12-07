@@ -20,9 +20,8 @@ HTML
 	        <input type='hidden' id='sort-type' name='sort-type'/>
                 <input type='hidden' id='sort-name' name='sort-name'/>
                 <input type='hidden' id='sort-order' name='sort-order'/>
-
                     <ul>
-			<li style="border: 1px solid gray; display:none;">
+			<li style="display:none;">
                             <span>Sort by:</span>
                             <select class='sort-type'>
                                 <option value="ay">AY Data</option>
@@ -38,7 +37,7 @@ HTML
 			    </select>
                        	</li>
 
-                    	<li style="border: 1px solid gray;">
+                    	<li>
                             <span>Sort by:</span>
                             <select class='sort-type'>
                                 <option value="ay">AY Data</option>
@@ -56,7 +55,7 @@ HTML
                        	</li>
                     </ul>
 DIV
-	html << form_tag('/view_table/sort', :id => 'sort-form', :method => :post) do 
+	html << form_tag('/view_table/view', :id => 'sort-form', :method => :get) do 
 				insidediv.html_safe 
 			end
 	html << "</div>"

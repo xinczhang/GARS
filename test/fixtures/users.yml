@@ -13,6 +13,7 @@ person1:
  role: 0
  created_at: "2011-10-26 17:20:17"
  updated_at: "2011-10-26 17:20:17"
+ country: "UNITED STATES"
 # column: value
 
 person2:
@@ -24,6 +25,96 @@ person2:
  role: 1
  created_at: "2011-10-24 17:20:17"
  updated_at: "2011-10-26 17:20:17"
+ country: "ITALY"
+
+
+person3:
+ id: 3
+ name: "Jiayu Zhang"
+ email: "jiayu@gmail.com"
+ password: "120"
+ sex: 1
+ role: 1
+ created_at: "2011-11-18 02:11:29"
+ updated_at: "2011-11-18 02:11:33"
+ country: "CHINA"
+
+person4:
+ id: 4
+ name: "David Wang"
+ email: "David.Wang@gmail.com"
+ password: "119"
+ sex: 0
+ role: 1
+ created_at: "2011-11-24 01:15:29"
+ updated_at: "2011-11-25 02:22:12"
+ country: "UNITED STATES"
+
+person5:
+ id: 5
+ name: "Marge Simpson"
+ email: "David.Wang@gmail.com"
+ password: "911"
+ sex: 0
+ role: 1
+ created_at: "2011-11-23 15:15:13"
+ updated_at: "2011-11-23 16:22:22"
+ country: "CANADA"
+ 
+person6:
+ id: 6
+ name: "John Scofield"
+ email: "John.Scofield@gmail.com"
+ password: "321"
+ sex: 0
+ role: 1
+ created_at: "2011-10-31 14:14:22"
+ updated_at: "2011-11-01 18:13:30"
+ country: "FRENCH GUIANA"
+ 
+person7:
+ id: 7
+ name: "Yuong Kim"
+ email: "Yuong.Kim@gmail.com"
+ password: "123"
+ sex: 0
+ role: 1
+ created_at: "2011-11-14 06:15:21"
+ updated_at: "2011-11-15 16:23:45"
+ country: "KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF"
+
+person8:
+ id: 8
+ name: "Kris Shinawatra"
+ email: "Kris.Shinawatra@gmail.com"
+ password: "444"
+ sex: 0
+ role: 1
+ created_at: "2011-11-28 12:11:11"
+ updated_at: "2011-11-28 16:43:44"
+ country: "THAILAND"
+ 
+person9:
+ id: 9
+ name: "Sudeep Tewari"
+ email: "Sudeep.Tewari@gmail.com"
+ password: "111"
+ sex: 0
+ role: 1
+ created_at: "2011-11-29 11:24:59"
+ updated_at: "2011-11-30 12:11:23"
+ country: "INDIA"
+ 
+person10:
+ id: 10
+ name: "Abram Gorbachov "
+ email: "Abram.Gorbachov @gmail.com"
+ password: "222"
+ sex: 0
+ role: 1
+ created_at: "2011-11-23 20:23:33"
+ updated_at: "2011-11-25 22:24:34"
+ country: "RUSSIAN"
 #
 #two: {}
 #  column: value

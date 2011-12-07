@@ -1,0 +1,142 @@
+<%= form_for(@official_test_score) do |f| %>
+  <% if @official_test_score.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@official_test_score.errors.count, "error") %> prohibited this official_test_score from being saved:</h2>
+
+      <ul>
+      <% @official_test_score.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+			<!-- Test Scores -->
+
+			<div style="display:block" id="app_test_scores" class="section">
+
+
+
+				<div class="header">
+
+				  <h2>Test Scores</h2>
+
+				</div>
+
+				<!-- GRE Scores -->
+
+				<div class="content">
+
+					<h3>GRE Scores</h3>
+
+					<table class="application">
+						<tbody>
+							<% @official_test_score.gre_info.each do |display| %>
+<% if (((session[:ots_display] != nil) && (session[:ots_display].include? display)) || (session[:ots_display] == nil))%>							
+								<tr>
+									<td class="fieldHead"><%=display%></td>
+									<% name = MAPPER.get_attr('ots',display)[:name] %>
+									<% if( OfficialTestScore.method_defined? :"#{name}")%>
+						<% val = @official_test_score.send(:"#{MAPPER.get_attr('ots',display.to_s)[:name]}") %>
+						<td class='ots'>					
+						<input type='text' name="<%= "#{name}" %>" value="<%= "#{val}" %>" />
+						</td>	
+
+                                        				<% else %>
+                                                				<td></td>
+                                        				<% end %>
+								</tr>
+							<% end %>
+							<% end %>
+						</tbody>
+					</table>
+
+				</div>
+
+				<!-- TOEFL Scores -->
+
+				<div class="content">
+
+					<h3>TOEFL Scores</h3>
+
+					<table class="application">
+						<tbody>
+							<% @official_test_score.toefl_info.each do |display| %>						
+					<% if (((session[:ots_display] != nil) && (session[:ots_display].include? display)) || (session[:ots_display] == nil))%>	
+								<tr>
+									<td class="fieldHead"><%=display%></td>
+									<% name = MAPPER.get_attr('ots',display)[:name] %>
+									<% if( OfficialTestScore.method_defined? :"#{name}" ) %>
+									<% val = @official_test_score.send(:"#{MAPPER.get_attr('ots',display.to_s)[:name]}") %>
+						<td class='ots'>					
+						<input type='text' name="<%= "#{name}" %>" value="<%= "#{val}" %>" />
+						</td>	
+                                        				<% else %>
+                                                			<td></td>
+                                        				<% end %>
+								</tr>
+							<% end %>
+							<% end %>
+			
+					</tbody></table>
+
+					  
+
+				</div>
+
+                                <!-- TSE -->
+
+                                <div class="content">
+
+                                        <h3>TSE (Test of Spoken English)</h3>
+
+                                        <table class="application">
+
+                                                <tbody><tr>
+
+                                                        <td class="fieldHead">TSE:</td>
+
+                                                        <td>110</td>
+
+                                                </tr>
+
+                                        </tbody></table>
+
+
+
+                                </div>
+
+
+
+                                <!-- IELTS -->
+
+                                <div class="content">
+
+                                        <h3>IELTS</h3>
+
+                                        <table class="application">
+
+                                                <tbody><tr>
+
+                                                        <td class="fieldHead">IELTS:</td>
+
+                                                        <td>7.0</td>
+
+                                                </tr>
+
+                                        </tbody></table>
+
+
+
+                                </div>
+
+
+				
+			</div>
+
+
+			
+
+
+
+<% end %>

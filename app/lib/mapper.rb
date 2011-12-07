@@ -2,15 +2,20 @@ require 'singleton'
 class Mapper
 	include Singleton
 
-	#parameter :ay=>ay_file, :ots=>ots_file
+	#parameter :ay=>ay_file, :ots=>ots_file, :institution=>institution_file
 	def init(hsh = {})
 		@map = Hash.new
 		@otherinfo = Hash.new
 		@sqlmap = Hash.new
+		@institutionmap = Hash.new
 	
 		hsh.each { |k,v|
-			init_file_mapping(k.to_s, v)
-			init_sql_mapping(k.to_s)
+			if k.to_s.eql?("institution")
+				init_institution_mapping(v)
+			else
+				init_file_mapping(k.to_s, v)
+				init_sql_mapping(k.to_s)
+			end
 		}
 	end
 	
@@ -26,6 +31,10 @@ class Mapper
 	def get_map(type)
 		@map[type]
 	end
+
+	def get_institution_map
+		@institutionmap
+	end	
 	
 	def get_otherinfo(type)
 		@otherinfo[type]
@@ -52,6 +61,20 @@ class Mapper
 		else
 		end	
 	end
+
+	def init_institution_mapping(file)
+		if(File.exist? file)
+			File.open(file, "r") do |f|
+				while(line = f.gets)
+					if(!line.nil? && !line.eql?(""))
+						rule = line.split("->")
+						@institutionmap[rule[0]] = rule[1].chomp
+					end
+				end
+			end
+		end
+	end
+
 
 	def init_file_mapping(type, file)
 		if(File.exist? file)
@@ -89,5 +112,5 @@ class Mapper
 	end
 
 	public :update, :get_map, :get_attr, :get_attr_list, :get_otherinfo
-	private :init_sql_mapping, :init_file_mapping
+	private :init_sql_mapping, :init_file_mapping, :init_institution_mapping
 end

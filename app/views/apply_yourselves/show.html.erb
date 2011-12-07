@@ -1,4 +1,12 @@
 <%= render @apply_yourself %>
 
+================
+<% @users = User.paginate(:page => params[:page], :per_page=>5)%>
+
+<% @users.each do |u| %>
+	<%= u.name %>
+<% end %>
+
+
 <%= link_to 'Edit', edit_apply_yourself_path(@apply_yourself) %> |
 <%= link_to 'Back', apply_yourselves_path %>

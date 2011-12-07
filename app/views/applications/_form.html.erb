@@ -11,7 +11,11 @@
     </div>
   <% end %>
 
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+<% @apply_yourself = @application.apply_yourself %>
+<% @official_test_score = @application.official_test_score %>
+
+<%= link_to "Edit Apply Yourself", edit_apply_yourself_path(@apply_yourself) %> <br/>
+<%= link_to "Edit Official Test Score", edit_official_test_score_path(@official_test_score) %> <br/>
+<%= link_to "Edit Reviews", "/reviews/edit_reviews?id=#{@application.id}" %>
+
 <% end %>

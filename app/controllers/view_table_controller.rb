@@ -1,22 +1,24 @@
 class ViewTableController < ApplicationController
 skip_before_filter :authorize, :only => [:index, :login]
+
  #front page, view all applications or assigned to user
   #front page, view all applications or assigned to user
   def view
 	#dummy the paginate here
-        @page = (params[:page] || 1)
-        @prev_page = 1
-        @next_page = 3
-	
-    if @is_admin
-          # for unknown reason, Application.all doesn't work
-          # the view.html.erb iterates over applications and
-          # for each application, it tries to access ay object by using application.apply_yourself
-          # this line code doesn't work.
-      @applications = select_application
+        auto_assign = params[:auto_assign] || 1  
+        if auto_assign.to_i() == 1
+                @applications = select_application
+                @reviewers = User.paginate :page => params[:review_page], :per_page => 5
+                @manual_assign_btn_visible = false
+                @auto_assign_btn_visible = true
+		@paging_params = {:auto_assign => 1}
         else
-      @applications = Application.joins(:users).where("users.id=?",@user.id)
-    end
+                @applications = select_application
+                @reviewers = User.paginate :page => params[:review_page], :per_page => 5
+                @manual_assign_btn_visible = true
+                @auto_assign_btn_visible = false
+		@paging_params = {:auto_assign => 0}
+        end
   end
 
   def add_remove_fields
@@ -27,7 +29,7 @@ skip_before_filter :authorize, :only => [:index, :login]
 	session[:ay_display] =  @ay.split ","
 	session[:ots_display] = @ots.split ","
 	logger.debug @ots + @ay
-	redirect_to "/home/view"
+	redirect_to "/view_table/view"
   end
 
   #proof of concept search, get the name and try to find a match in database
@@ -45,28 +47,44 @@ skip_before_filter :authorize, :only => [:index, :login]
   		render :action => "view"
 	end
   end
+
  # select application in database according current conditions saved in session
   def select_application
-	conditions = ""
+	crta = {:filterQuery => nil, :orderQuery => nil}	
+	if !params[:"select-type"].nil?
+		crta[:filterQuery] = {:types => nil, :name=> nil, :op => nil, :value=>nil}	
+		crta[:filterQuery][:types] = params[:"select-type"].split ","
+		crta[:filterQuery][:name] = params[:"select-name"].split ","
+		crta[:filterQuery][:value] = params[:"select-value"].split ","
+		crta[:filterQuery][:op] = params[:"select-op"].split ","
+	end
+	if !params[:"sort-type"].nil?
+		crta[:order] = {:types => nil, :name=> nil, :op => nil}		
+		crta[:order][:types] = params[:"sort-type"].split ","
+		crta[:order][:name] = params[:"sort-name"].split ","
+		crta[:order][:op] = params[:"sort-order"].split ","
+	end	
+	joins = @is_admin ? [:apply_yourself, :official_test_score] : [:apply_yourself, :official_test_score, :users]
+	conditions = @is_admin ? "" : "users.id = #{session[:current_user]}"
 	#construct conditions sql segment by what in the filter form
-	if (!session[:filterQuery].nil?) 
-		for i in 0..session[:filterQuery][:types].length - 1
-			column = MAPPER.get_attr(session[:filterQuery][:types][i], session[:filterQuery][:name][i])
+	if (!crta[:filterQuery].nil?) 
+		for i in 0..crta[:filterQuery][:types].length - 1
+			column = MAPPER.get_attr(crta[:filterQuery][:types][i], crta[:filterQuery][:name][i])
 			# we didn't deal with those column being ignored
 			if (column[:name] != "ignore")
-				table = "ay" == session[:filterQuery][:types][i] ? "apply_yourselves" : "official_test_scores"
+				table = "ay" == crta[:filterQuery][:types][i] ? "apply_yourselves" : "official_test_scores"
 				add = (conditions == "") ? "" : " AND " 
 				conditions << add + table + "." + column[:name]
 				#treat string and numerical column differently, add wild card to string propery
 				if (column[:type].to_s == "string")
-					conditions += " LIKE '%#{session[:filterQuery][:value][i] }%'";
+					conditions += " LIKE '%#{crta[:filterQuery][:value][i] }%'";
 				else
-					if (session[:filterQuery][:op][i] == "-1")
-						conditions += " < #{session[:filterQuery][:value][i] }";	
-					elsif(session[:filterQuery][:op][i] == "1")
-						conditions += " > #{session[:filterQuery][:value][i] }";
+					if (crta[:filterQuery][:op][i] == "-1")
+						conditions += " < #{crta[:filterQuery][:value][i] }";	
+					elsif(crta[:filterQuery][:op][i] == "1")
+						conditions += " > #{crta[:filterQuery][:value][i] }";
 					else
-						conditions += " = #{session[:filterQuery][:value][i] }";
+						conditions += " = #{crta[:filterQuery][:value][i] }";
 					end
 				end
 			end
@@ -74,15 +92,15 @@ skip_before_filter :authorize, :only => [:index, :login]
 	end	
 	#construct the order segment by what in the filter form
 	orders = ""
-	if (!session[:order].nil?) 
-                for i in 0..session[:order][:types].length - 1
-                        name = MAPPER.get_attr(session[:order][:types][i], session[:order][:name][i])[:name];
+	if (!crta[:order].nil?) 
+                for i in 0..crta[:order][:types].length - 1
+                        name = MAPPER.get_attr(crta[:order][:types][i], crta[:order][:name][i])[:name];
                        	if (name != "ignore")
 				# the logic is simpler here, just concat field name and ascending/descending info
-				table = "ay" == session[:order][:types][i] ? "apply_yourselves" : "official_test_scores"
+				table = "ay" == crta[:order][:types][i] ? "apply_yourselves" : "official_test_scores"
                         	add = (orders == "") ? "" : ", "
 				orders += add + table + "." + name
-                                if (session[:order][:op][i] == "-1")
+                                if (crta[:order][:op][i] == "-1")
                                         orders += " DESC";   
                                 else
                                         orders += " ASC";
@@ -92,35 +110,16 @@ skip_before_filter :authorize, :only => [:index, :login]
         end
 	#construct the query and fetch applications depending on if we really have orders or conditions
 	if (conditions == "") && (orders == "")
-		return Application.find(:all, :joins => [:apply_yourself, :official_test_score])
+		return Application.paginate :joins => joins, :page => params[:page], :per_page => 30
 	elsif (conditions != "") && (orders == "")
-		return Application.find(:all, :joins => [:apply_yourself, :official_test_score], :conditions => conditions)
+		return Application.paginate :joins => joins, :conditions => conditions, :page => params[:page], :per_page => 30
 	elsif (orders != "") && (conditions == "")
-		return Application.find(:all, :joins => [:apply_yourself, :official_test_score], :order => orders)
+		return Application.paginate :joins => joins, :order => orders, :page => params[:page], :per_page => 30
 	else
-		return Application.find(:all, :joins => [:apply_yourself, :official_test_score], :conditions => conditions, :order => orders)
+		return Application.paginate :joins => joins, :conditions => conditions, :order => orders, :page => params[:page], :per_page => 30
 	end     
 
-  end
 
-  def filter
-	if (session[:filterQuery] == nil)
-		session[:filterQuery] = {:types => nil, :name=> nil, :op => nil, :value=>nil}
-	end
-	session[:filterQuery][:types] = params[:"select-type"].split ","
-	session[:filterQuery][:name] = params[:"select-name"].split ","
-	session[:filterQuery][:value] = params[:"select-value"].split ","
-	session[:filterQuery][:op] = params[:"select-op"].split ","
-	redirect_to view_table_view_path
-  end
 
-  def sort
-	if (session[:order] == nil)
-		session[:order] = {:types => nil, :name=> nil, :op => nil}
-	end
-	session[:order][:types] = params[:"sort-type"].split ","
-	session[:order][:name] = params[:"sort-name"].split ","
-	session[:order][:op] = params[:"sort-order"].split ","
-	redirect_to view_table_view_path
   end
 end

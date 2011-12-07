@@ -21,7 +21,6 @@ HTML
                     </div>
 
 			<input type='hidden' id='select-type' name='select-type'/>
-                	<input type='hidden' id='select-sql-type' name='select-sql-type'/>
                 	<input type='hidden' id='select-name' name='select-name'/>
 			<input type='hidden' id='select-value' name='select-value' />
 			<input type='hidden' id='select-op' name='select-op' />
@@ -68,7 +67,7 @@ HTML
                        	</li>
                     </ul>
 DIV
-	html << form_tag('/view_table/filter', :id => 'filter-form', :method => :post) do insidediv.html_safe
+	html << form_tag('/view_table/view', :id => 'filter-form', :method => :get) do insidediv.html_safe
 end
 	html << "</div>"
 	

@@ -10,6 +10,14 @@ class ApplyYourselvesController < ApplicationController
     end
   end
 
+  def update_field
+    @apply_yourself = ApplyYourself.find(params[:id])
+    n = params[:name]
+    v = params[:value]
+    @apply_yourself.send(:"#{n}=", v)
+    @apply_yourself.save
+  end
+
   # GET /apply_yourselves/1
   # GET /apply_yourselves/1.xml
   def show

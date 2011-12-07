@@ -1,5 +1,5 @@
 Submitted Date->submission_date
-Applicant Client ID->ID
+Applicant Client ID->applicant_client_id
 Applicant Last Name->last_name
 Applicant First Name->first_name
 Applicant Middle Name->middle_name

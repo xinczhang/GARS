@@ -1,13 +1,11 @@
 source 'http://rubygems.org'
-gem 'therubyracer', '>=0.8.2'
-gem 'rails', '3.1.1'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2'
-
-
+gem 'thin'
+gem 'tzinfo'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -17,6 +15,11 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+gem 'will_paginate'
+
+# add zip/unzip functionality
+gem 'rubyzip'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -29,7 +32,8 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
-
+gem 'actionmailer'
+gem 'activerecord'
 group :test do
   # Pretty printed test output
   gem 'minitest'

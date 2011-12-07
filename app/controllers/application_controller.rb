@@ -27,10 +27,17 @@ class ApplicationController < ActionController::Base
 
        # @user = session[:current_user]
         uid = session[:current_user]
+	if session[:ay_display].nil?
+		session[:ay_display] = "Institution1, Country of Citizenship".split
+	end
+	if session[:ots_display].nil?
+		session[:ots_display] = "".split
+	end
         @user = User.find_by_id(uid)
         @is_logged_in = session[:is_logged_in]
         @is_admin = session[:is_admin]
         @uname = @user.name
 	  end
     end
+
 end

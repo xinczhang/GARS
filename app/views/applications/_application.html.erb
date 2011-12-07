@@ -3,11 +3,31 @@
 
 <div class='section'>
 	<div class='header'>
-		<h2>Reviews</h2>
+		<h2>Reviews 
+		<% if @is_admin %>
+			- <%= link_to "Edit", "/reviews/edit_reviews?id=#{application.id}" %>
+		<% end %>
+		</h2>
 	</div>
 
-	<div class='content'>
-		<%= render application.reviews %>
+	<div class='content'>	
+		<% if @is_admin %>
+			<% @reviews = application.reviews %>
+			<% if @reviews.length == 0 %>
+				This application has no reviews so far
+			<% else %>
+				<h4>Average Rating: <%= @reviews.average 'rating' %></h4>
+				<%= render @reviews %>	
+			<% end %>
+		<% else %>
+			<% @reviews = Review.find(:all, :joins => :user, :conditions => "users.id = #{@user.id} AND application_id = #{application.id}") %>
+			<% if @reviews.length == 0 %>
+				No reviews
+			<% else %>
+				<h4>Average Rating: <%= @reviews.average 'rating' %></h4>
+				<%= render @reviews %>	
+			<% end %>
+		<% end %>
 	</div>
 </div>
 	

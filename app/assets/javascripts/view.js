@@ -1,4 +1,6 @@
-		$(document).ready(function() {					
+		$(document).ready(function() {				
+			$('.pagination a.previous_page').attr('class', 'jqBtn');
+			$('.pagination a.next_page').attr('class', 'jqBtn');
 			$( "#selectRadios" ).buttonset();
 		
 			$("#expandBtn").button({
@@ -90,6 +92,42 @@
 			})
 			.click(function() {
 				/* expandAppBtn click */
+				var data = $(this).attr('rel').split(' ');
+				var first_time = data[0] == 'first_time';
+				if (first_time) {
+					var app_id = data[1];
+					var outer_this_obj = this;
+					/* add a loading icon to the appContent div */
+					var loadingIcon = $('<img src="/assets/icon/loading.gif" alt="loading" width="25" height="25" />');
+					var appContent = $(this).parent().next().children(".appContent");
+					appContent.append(loadingIcon);
+
+					$.ajax({
+			  			type: "GET",
+						url: "/applications/get_app",
+						data: "id=" + app_id,
+						success: function(app_html) {
+							appContent.empty().append($(app_html));
+							appContent.find('.section').addClass('collapsed');
+							appContent.find('.section .header').click(function() {				
+								var className = $(this).parent().attr("class");
+								if (className.indexOf('nocollapsing') != -1)
+									return;
+
+								if (className.indexOf('expanded') == -1) {
+									$(this).parent().attr('class', 'section expanded');
+								}
+								else {
+									$(this).parent().attr('class', 'section collapsed');
+								}
+				
+							});
+
+							$(outer_this_obj).attr('rel', 'second_time ' + app_id);
+						}
+					});
+				}
+
 				var options;
 				if ($(this).text() === "Expand" ) {
 					options = {
@@ -126,11 +164,9 @@
 				}
 			});				
 			
-			notAssignable();
-
 			// the dialog that shows up when the assign button is clicked
 			$("#assignReviewsDialog").dialog({
-				width: 700,
+				width: 900,
 				height: 400,
 				modal: true,
 				autoOpen: false, // closed intially
@@ -138,17 +174,34 @@
 				resizable: false,
 				buttons: {
 				Ok: function() {
-						save_attrs_in_hidden('ay');
-						save_attrs_in_hidden('ots');
-						save_attrs_in_hidden('gars');
+						// do whatever is necessary before posting
 						$(this).find('.submitBtn').trigger('click');
 					}
 				}
-			});	
+			});
 			$("#assignBtn").click(function() {
 				$("#assignReviewsDialog").dialog("open");
 			});
-			
+			// the dialog that shows up when the assign button is clicked
+			/*
+			$("#autoAssignReviewsDialog").dialog({
+				width: 400,
+				height: 200,
+				modal: true,
+				autoOpen: false, // closed intially
+				draggable: false,
+				resizable: false,
+				buttons: {
+				Ok: function() {
+						// do whatever is necessary before posting
+						$(this).find('.submitBtn').trigger('click');
+					}
+				}
+			});
+			$("#autoAssignBtn").click(function() {
+				$("#autoAssignReviewsDialog").dialog("open");
+			});
+			*/
 			$(".research-area").change(function(){
 				var v = $(this).children("option:selected").val();
 				$.get(
@@ -163,7 +216,7 @@
 							var user = userlst[i];
 
 							var tr = "<tr><td>";
-							tr += '<input type="checkbox" value="' + user['name'] + '"/>';
+							tr += '<input name="name[]" type="checkbox" value="' + user['name'] + '"/>';
 							tr += '<a href class="appName">' + user['name'] + '</a>';
 							
 							var areas = '';
@@ -245,6 +298,7 @@
 				    value    = $("input#select-value"),
 				    op       = $("input#select-op");
 
+
 				var _t, _s, _n, _v, _o;
 				var _tt = [], _nn = [], _vv = [], _oo = [];				
 				var optlst = $(this).find("ul li:gt(0)");
@@ -301,7 +355,16 @@
 				type.val(_tt.join(','));
 				name.val(_nn.join(','));
 				order.val(_oo.join(','));
-				return true;
+				
+				var url = window.location.href;
+				if(url.indexOf('select-type') >= 0){	
+					var sort_index = url.indexOf('&sort-type'), 
+					       url_len = url.length;
+					var sort_param = "&sort-type="+type.val()+"&sort-name="+name.val()+"&sort-order="+order.val();
+					return false;
+				}else{
+					return true;
+				}
 			});
 
 			$("#sortDelLevelBtn").click(function(){
@@ -345,29 +408,29 @@
 
 		
 			$('#upload-form form').submit(function(){
-				var tkn,type;
+				var tkn,type,prog;
 				tkn = $(this).find('input[name="authenticity_token"]').val();
 				type= $('#filetype option:selected').val();
+				prog= $('#applicationtype option:selected').val();
 				$.ajaxFileUpload({
 					url:'/upload/file',
 					secureuri:false,
 					data:{
 						authenticity_token:tkn,
-						filetype:type
+						filetype:type,
+						program:prog
 					},
 					dataType:'text/html',
 					fileElementId:'datafile',
 					success:function(data){
 						
-						var li = $("<li><span>Error: "+data+"</span<</li>");	
+						var li = $("<li><span>"+data+"</span<</li>");	
 						$("#uploadErrorMsgList").prepend(li);
 					}
 				}); 
 			
 				return false;
-			});
-		
-			
+			});			
 		});
 		
 		function notAssignable() {

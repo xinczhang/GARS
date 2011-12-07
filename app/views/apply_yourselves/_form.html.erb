@@ -1,25 +1,53 @@
-<%= form_for(@apply_yourself) do |f| %>
-  <% if @apply_yourself.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@apply_yourself.errors.count, "error") %> prohibited this apply_yourself from being saved:</h2>
+<div style="display:block" id="app_applicant_information" class="section">
+	<div class="header">
+		<h2>Applicant Information-changing</h2>
+	</div>
 
-      <ul>
-      <% @apply_yourself.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+	<div class="content">
+		<table class="application">
+			<tbody>
+				<% MAPPER.get_attr_list("ay").each do |display| %>						
+				<tr>
+					<td class="fieldHead"><%= display+":"  %></td>
+					<% name = MAPPER.get_attr('ay',display)[:name] %>
+					<% if( ApplyYourself.method_defined? :"#{name}" ) %>
+						<% val = apply_yourself.send(:"#{name}") %>
+						<td class='ay'>					
+						<input type='text' name='<%= "#{name}" %>' value='<%= "#{val}" %>' />
+						</td>
+					<% else %>
+						<td>fdsa</td>
+					<% end %>
+				</tr>
+				<% end %> 
+			</tbody>
+		</table>
+	</div>
+</div>
 
-  <div class="field">
-    <%= f.label :tofel %><br />
-    <%= f.text_field :tofel %>
-  </div>
-  <div class="field">
-    <%= f.label :gpa %><br />
-    <%= f.text_field :gpa %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+
+
+
+<div style="display:block" id="app_applicant_information" class="section">
+	<div class="header">
+		<h2>Applicant Information</h2>
+	</div>
+
+	<div class="content">
+		<table class="application">
+			<tbody>
+				<% MAPPER.get_attr_list("ay").each do |display| %>						
+				<tr>
+					<td class="fieldHead"><%= display+":"  %></td>
+					<% name = MAPPER.get_attr('ay',display)[:name] %>
+					<% if( ApplyYourself.method_defined? :"#{name}" ) %>
+						<td><%= apply_yourself.send(:"#{name}")  %></td>
+					<% else %>
+						<td></td>
+					<% end %>
+				</tr>
+				<% end %> 
+			</tbody>
+		</table>
+	</div>
+</div>

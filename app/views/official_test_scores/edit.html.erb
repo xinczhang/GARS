@@ -1,0 +1,150 @@
+<% content_for :head do %>
+	 <script type='text/javascript'>
+		$(document).ready(function() {
+			$('td input:text').keyup(function() {
+				var id = $('#ots_id').attr('value');
+				var n = $(this).attr('name');
+				var v = $(this).attr('value');
+				path = "/official_test_scores/update_field";
+				update_field(path, id, n, v);
+			});
+		});
+
+		function update_field(path, id,n, v) {
+			$.ajax({
+			  type: "GET",
+			  url: path,
+			  data: "id=" + id + "&name=" + n + "&value=" + v,
+			});
+		}
+	</script>
+<% end %>
+
+
+<div style='display:none'>
+<%= link_to 'Show', @official_test_score %> |
+<%= link_to 'Back', official_test_scores_path %>
+</div>
+<input type='hidden' id='ots_id' name='id' value="<%= @official_test_score.id %>" />
+			<!-- Test Scores -->
+
+			<div style="display:block" id="app_test_scores" class="section">
+
+
+
+				<div class="header">
+
+				  <h2>Test Scores</h2>
+
+				</div>
+
+				<!-- GRE Scores -->
+
+				<div class="content">
+
+					<h3>GRE Scores</h3>
+
+					<table class="application">
+						<tbody>
+							<% @official_test_score.gre_info.each do |display| %>
+								<tr>
+									<td class="fieldHead"><%=display%></td>
+									<% name = MAPPER.get_attr('ots',display)[:name] %>
+									<% if( OfficialTestScore.method_defined? :"#{name}")%>
+									<td class='ots'>
+										<% val = @official_test_score.send(:"#{MAPPER.get_attr('ots',display.to_s)[:name]}") %>
+										<input type='text' name='<%= "#{name}" %>' value='<%= "#{val}" %>' />						
+									</td>
+                                        				<% else %>
+                                                				<td></td>
+                                        				<% end %>
+								</tr>
+							<% end %>
+						</tbody>
+					</table>
+
+				</div>
+
+				<!-- TOEFL Scores -->
+
+				<div class="content">
+
+					<h3>TOEFL Scores</h3>
+
+					<table class="application">
+						<tbody>
+							<% @official_test_score.toefl_info.each do |display| %>						
+								<tr>
+									<td class="fieldHead"><%=display%></td>
+									<% name = MAPPER.get_attr('ots',display)[:name] %>
+									<% if( OfficialTestScore.method_defined? :"#{name}" ) %>
+									<td class='ots'>
+										<% val = @official_test_score.send(:"#{MAPPER.get_attr('ots',display.to_s)[:name]}") %>
+										<input type='text' name='<%= "#{name}" %>' value='<%= "#{val}" %>' />
+									</td>
+                                        				<% else %>
+                                                			<td></td>
+                                        				<% end %>
+								</tr>
+							<% end %>
+			
+					</tbody></table>
+
+					  
+
+				</div>
+
+                                <!-- TSE -->
+
+                                <div class="content">
+
+                                        <h3>TSE (Test of Spoken English)</h3>
+
+                                        <table class="application">
+
+                                                <tbody><tr>
+
+                                                        <td class="fieldHead">TSE:</td>
+
+                                                        <td><input type='text' name='tse' value='110' /></td>
+
+                                                </tr>
+
+                                        </tbody></table>
+
+
+
+                                </div>
+
+
+
+                                <!-- IELTS -->
+
+                                <div class="content">
+
+                                        <h3>IELTS</h3>
+
+                                        <table class="application">
+
+                                                <tbody><tr>
+
+                                                        <td class="fieldHead">IELTS:</td>
+
+                                                        <td><input type='text' name='ielts' value='7.0' /></td>
+
+                                                </tr>
+
+                                        </tbody></table>
+
+
+
+                                </div>
+
+
+				
+			</div>
+
+
+			
+			
+

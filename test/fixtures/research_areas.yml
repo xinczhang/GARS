@@ -17,4 +17,22 @@ two:
 three:
  code: 3
  name: "Networks"
+
+four:
+ code: 4
+ name: "Programming languages/Verification"
+
+five:
+ code: 5
+ name: "Security"
+
+six:
+ code: 6
+ name: "Systems"
+
+seven:
+ code: 7
+ name: "Vision/Natural Language Processing"
+
+
 #  column: value

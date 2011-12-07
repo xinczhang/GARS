@@ -216,11 +216,11 @@ body
 	border-top:1px solid #DEDEDE;
 }
 .appHeaderTitle {
-	width: 180px;
+	min-width: 180px;
 	float: left;
 }
 .appName {
-	color: #93d694;
+	color: #006699;
 	font-weight: bold;
 	display: inline-block;
 }
@@ -229,14 +229,14 @@ body
 }
 .appWrapper{
 	clear: both;
-	#border: 1px solid purple;
+	/*border: 1px solid purple;*/
 	overflow: hidden;
 }
 .appControls {
 	float: left;
 	margin-right: 6px;
 	overflow: hidden;
-	#border: 1px solid green;
+	/*border: 1px solid green;*/
 }
 .appControls .expandAppBtn, .heading .expandAppBtn, .appControls .editCommentBtn {
 	padding:0px; 
@@ -247,15 +247,16 @@ body
 }
 .appArea {
 	overflow: hidden;
-	#border: 1px solid red;
+	/*border: 1px solid red;*/
 }
 .appHeader {
 	padding: 2px;
-	#border: 1px solid green;
+	/*border: 1px solid green;*/
 }
 .appContent {
 	padding: 0px;
 	display: none;
+        clear: both;
 }
 /* END display applications
 

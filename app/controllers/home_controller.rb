@@ -15,7 +15,7 @@ class HomeController < ApplicationController
         email = params["email"]
     	psswd = params["password"]
         #fetch user interface by composite key find method
-        @user = User.find(:first, :conditions=>["email=? AND password=?", email, psswd])
+        @user = User.find(:first, :conditions=>["email=? AND password=MD5(?)", email, email+psswd])
         if @user.nil?
                 logger.debug "No user object find, return to index"
                 flash[:error] = "username and password are incorrect"

@@ -61,16 +61,16 @@ def ots_selector class_name
 	select_selectors "ots", class_name, "none"
 end
 
-def reviewer_selector class_name
+def reviewer_selector class_name, reviewers
 	html = "<table class='tableSelector #{class_name}'>".html_safe
-	User.all.each do |r|
+	reviewers.each do |r|
 		k = r.name
 		research_areas = []
 		r.research_areas.each do |ra|
 			research_areas << ra.name
 		end
 		html << '<tr>'.html_safe
-		html << "<td><input type='checkbox' name='#{k.html_safe}' value='#{k.html_safe}' />".html_safe + "<a href='' class='appName'>#{k.html_safe}</a>".html_safe + '       '.html_safe + "<span>#{research_areas.join(',')}</span>".html_safe + "</td>".html_safe
+		html << "<td><input type='checkbox' name='name[]' value='#{k.html_safe}' />".html_safe + "<a href='' class='appName'>#{k.html_safe}</a>".html_safe + '       '.html_safe + "<span>#{research_areas.join(',')}</span>".html_safe + "</td>".html_safe
 		html << '</tr>'.html_safe
 	end
 	html << "</table>".html_safe	

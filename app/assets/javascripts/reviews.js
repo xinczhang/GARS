@@ -1,19 +1,39 @@
-$(document).ready(function() {
-	$(".editCommentBtn").button({
-		icons: {primary: "ui-icon-pencil"},
-		text: false
-	}).click(function() {
-		$(this).parent().next().children("div:nth-child(2)").show();				
-	});
-
-	$(".commentSubmitBtn").click(function() {
-		var appContentDiv = $(this).parents(".appContent");
-		appContentDiv.hide();
-		var appControlsDiv = appContentDiv.parents(".appWrapper").children(".appControls");
-		appControlsDiv.children("div").css("background-color", "green");
-		appControlsDiv.children("a").button("option",{
-			icons: {primary: "ui-icon-plus"},
-			text: false
-			});
-	});
+$(document).ready(function() {	
+	$(".expandAppBtn").button({
+		icons: {
+              		primary: "ui-icon-plus"
+           	},
+            	text: false
+	}).click(expand_collapse_handler);
+	
+	$(".editCommentBtn").button({                
+                icons: {                
+                        primary: "ui-icon-plus"
+                },
+                text: false
+        }).click(expand_collapse_handler);
+	$('.expandAppBtn').trigger('click');
 });
+
+function expand_collapse_handler() {
+                                /* expandAppBtn click */
+                                var options;
+                                if ($(this).text() === "Expand" ) {
+                                        options = {
+                                                label: "Collapse",
+                                                icons: {
+                                                        primary: "ui-icon-minus"
+                                                }
+                                        };
+                                        $(this).parent().next().children(".appContent").show();
+                                } else {
+                                        options = {
+                                                label: "Expand",
+                                                icons: {
+                                                        primary: "ui-icon-plus"
+                                                }
+                                        };
+                                        $(this).parent().next().children(".appContent").hide();
+                                }
+                                $( this ).button( "option", options );
+                        }

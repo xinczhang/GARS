@@ -72,7 +72,7 @@ class Validator
 	def check_correspondence(header)
 		err = ""
 		if(header.length > @map.length)
-			err = "inconsistent between header and mapping1"
+			raise "inconsistent between header and mapping"
 		end
 		
 		idx = 0
@@ -84,15 +84,12 @@ class Validator
 			end
 		end
 		if(idx < header.length - 1)
-			err = "inconsistent between header and mapping2"
+			raise "inconsistent between header and mapping_"
 		end
 		
-		puts header
-		puts @map
-		puts "IDX="+idx.to_s	
-		if(!err.empty?)
-			raise err.to_s
-		end	
+	#	puts header
+	#	puts @map
+	#	puts "IDX="+idx.to_s	
 	end
 	
 	public :validate_data 

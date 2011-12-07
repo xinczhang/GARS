@@ -13,5 +13,42 @@ two:
 three:
  user_id: 2
  research_area_id: 1
+four:
+ user_id: 3
+ research_area_id: 3
+five:
+ user_id: 3
+ research_area_id: 7
+six:
+ user_id: 4
+ research_area_id: 3
+seven:
+ user_id: 5
+ research_area_id: 6
+eight:
+ user_id: 6
+ research_area_id: 5
+nine:
+ user_id: 7
+ research_area_id: 4
+ten:
+ user_id: 8
+ research_area_id: 3
+eleven:
+ user_id: 8
+ research_area_id: 2
+twelve:
+ user_id: 9
+ research_area_id: 1
+thirteen:
+ user_id: 10
+ research_area_id: 7
+
+
+
+
+
+
+
 
 

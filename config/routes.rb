@@ -1,9 +1,25 @@
 GARS::Application.routes.draw do
   resources :users
+  
+  get 'applications/get_app'
   resources :applications
+
+  get 'apply_yourselves/update_field'
   resources :apply_yourselves
 
-  
+  get 'official_test_scores/update_field'
+  resources :official_test_scores
+
+  get 'reviews/edit_reviews'
+  post "reviews/post_review"
+  get "reviews/update_review"
+  resources :reviews
+ 
+  post "applications/make_decision"  
+
+  post 'assign_review/auto_assign'
+  post 'assign_review/assign_reviewers' 
+
   get "home/index"
   post "home/login"
   get "home/logout"
@@ -13,14 +29,10 @@ GARS::Application.routes.draw do
   get "home/upload"
   get "home/reviews"
 
-##################################
-  post "home/add_remove_fields"
-##########################################
+  post "view_table/add_remove_fields"
 
   post "upload/file"
   post "home/search"
-  post "view_table/filter"
-  post "view_table/sort"
   post "assign_review/assign"
   post "home/filter_user"
 
@@ -75,7 +87,7 @@ GARS::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => 'welcome#index'
-  root :to => 'view_table#view'
+  root :to => 'home#index'
   
   # See how all your routes lay out with "rake routes"
 

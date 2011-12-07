@@ -12,11 +12,15 @@ class ApplicationsController < ApplicationController
   
   def make_decision
     app_id = params[:id]
+    a = Application.find(app_id)
     decision = params[:decision]
     if decision == 'Accept'
-      # do something
+      a.status = 1
+      a.save
       redirect_to "/applications/" + app_id.to_s()
     elsif
+      a.status = -1
+      a.save
       redirect_to "/applications/" + app_id.to_s()	
     end
   end

@@ -182,6 +182,13 @@
 			$("#assignBtn").click(function() {
 				$("#assignReviewsDialog").dialog("open");
 			});
+	
+			$("#auto-assign-reviews-form").submit(function(){
+			        var loadingIcon = $('<img src="/assets/icon/loading.gif" alt="loading" width="25" height="25" />');
+                                $(this).append(loadingIcon);
+				return true;
+			});
+
 			// the dialog that shows up when the assign button is clicked
 			/*
 			$("#autoAssignReviewsDialog").dialog({

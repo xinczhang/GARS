@@ -5,6 +5,7 @@ class UploadController < ApplicationController
 
   #upload file POST
   def file
+	logger.debug "in uploadctrl file"
 	file = params[:datafile]
         type = params[:filetype] #ay or ots
 	prog = params[:program]	
@@ -142,6 +143,7 @@ class UploadController < ApplicationController
 
 
   def upload_pdf(pdf, prog)
+	logger.debug "in puts uploading pdf file"
 	logger.debug "in uploading pdf file"
 	fname = pdf.original_filename
 	fname_wo_ext = fname.chomp(File.extname(fname))

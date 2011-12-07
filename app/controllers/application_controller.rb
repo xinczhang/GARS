@@ -20,8 +20,11 @@ class ApplicationController < ActionController::Base
     end
 	
     def authorize
+	logger.debug session['current_user']
+	logger.debug session['abc']
       if session[:current_user].nil?
 	    flash[:error] = 'You are not authorized. Please log in first.'
+	logger.debug "fuckkk"
         redirect_to home_index_path
       else
 

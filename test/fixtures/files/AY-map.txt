@@ -1,0 +1,81 @@
+Submitted Date->submission_date
+Applicant Client ID->applicant_client_id
+Applicant Last Name->last_name
+Applicant First Name->first_name
+Applicant Middle Name->middle_name
+Date of Birth->birth_month
+DOB Day->birth_day
+DOB Year->birth_year
+Gender->gender
+Ethnicity->ethnicity
+Race->race
+Country of Citizenship->citizenship
+Permanent Resident_yes no->permanent_resident
+Current Phone (complete)->phone
+Email Address->email_address
+Application Type->specialization
+Verbal->GRE_V
+Verbal Percentile->GRE_V_pctile
+Quantitative->GRE_Q
+Quantitative Percentile->GRE_Q_pctile
+Analytical->GRE_A
+Analytical Percentile->GRE_A_pctile
+Subject Test Taken->GRE_subj_name
+GRE Subject Score->GRE_subj_score
+TOEFL Score->TOEFL
+TSE->ignore
+IELTS->IELTS
+TOEFL IBT Total Score->ignore
+TOEFL IBT Reading->ignore
+TOEFL IBT Speaking->ignore
+TOEFL IBT Writing->ignore
+TOEFL IBT Listening->ignore
+TOEFL Internet->TOEFL_internet
+Program->research_area
+IndicateTopics->research_topics
+Undergrad Rank->ug_rank
+Undergrad Out of->ug_out_of
+Grad Rank->grad_rank
+Grad Out of->grad_out_of
+Course Title->theory_course_title
+GradorUndergrad->ignore
+Instructor->ignore
+Years Taken->ignore
+Grading Scale->theory_scale
+Grade->theory_grade
+USB Equivalent 1->theory_SBU_equiv
+Course Title->algorithm_course_title
+GradorUndergrad->ignore
+Instructor->ignore
+Years Taken->ignore
+Grading Scale->algorithm_scale
+Grade->algorithm_grade
+USB Equivalent 1->algorithm_SBU_equiv
+Course Title->prog_lang_course_title
+GradorUndergrad->ignore
+Instructor->ignore
+Years Taken->ignore
+Grading Scale->prog_lang_scale
+Grade->prog_lang_grade
+USB Equivalent 1->prog_lang_SBU_equiv
+Course Title->os_course_title
+GradorUndergrad->ignore
+Instructor->ignore
+Years Taken->ignore
+Grading Scale->os_scale
+Grade->os_grade
+USB Equivalent 1->os_SBU_equiv
+Institution1->ug_inst
+UndergradGPA->ug_GPA
+GradingScale1->ug_scale
+Year1GPA->ug_GPA1
+Year2GPA->ug_GPA2
+Year3GPA->ug_GPA3
+Year4GPA->ug_GPA4
+Year5GPA->ug_GPA5
+Institution2->grad_inst
+GradGPA->grad_GPA
+GradingScale2->grad_scale
+Year6GPA->grad_GPA1
+Year7GPA->grad_GPA2
+

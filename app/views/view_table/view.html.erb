@@ -8,11 +8,11 @@
     </div>
 
 	<a href="#" id="expandBtn">Expand</a>
-	<% if @manual_assign_btn_visible %>
+	<% if @manual_assign_btn_visible && @is_admin %>
 	<a href="#" class="jqBtn" id="assignBtn">Manual Assign</a>
 	<% end %>
 
-	<% if @auto_assign_btn_visible %>
+	<% if @auto_assign_btn_visible && @is_admin %>
 	<div>
 		<input type='checkbox' class='dialogTrigger' id='autoAssignBtn'>
 		<label for='autoAssignBtn'>Auto Assign</label>

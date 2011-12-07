@@ -1,0 +1,89 @@
+>> Writing PID to tmp/pids/thin.8000.pid
+>> Using rack adapter
+>> Thin web server (v1.3.1 codename Triple Espresso)
+>> Maximum connections set to 1024
+>> Listening on 0.0.0.0:8000, CTRL+C to stop
+>> Exiting!
+>> Writing PID to tmp/pids/thin.8000.pid
+>> Using rack adapter
+>> Thin web server (v1.3.1 codename Triple Espresso)
+>> Maximum connections set to 1024
+>> Listening on 0.0.0.0:8000, CTRL+C to stop
+>> Waiting for 5 connection(s) to finish, can take up to 30 sec, CTRL+C to stop now
+>> Exiting!
+>> Writing PID to tmp/pids/thin.8000.pid
+>> Using rack adapter
+>> Exiting!
+/home/jiayu/Documents/GARS/config/environments/development.rb:4:in `block in <top (required)>': uninitialized constant SSL (NameError)
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/railtie/configurable.rb:24:in `class_eval'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/railtie/configurable.rb:24:in `configure'
+	from /home/jiayu/Documents/GARS/config/environments/development.rb:2:in `<top (required)>'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/engine.rb:539:in `block in <class:Engine>'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/initializable.rb:30:in `instance_exec'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/initializable.rb:30:in `run'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/initializable.rb:55:in `block in run_initializers'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/initializable.rb:54:in `each'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/initializable.rb:54:in `run_initializers'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/application.rb:96:in `initialize!'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/railtie/configurable.rb:30:in `method_missing'
+	from /home/jiayu/Documents/GARS/config/environment.rb:5:in `<top (required)>'
+	from /home/jiayu/Documents/GARS/config.ru:3:in `require'
+	from /home/jiayu/Documents/GARS/config.ru:3:in `block in <main>'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/builder.rb:51:in `instance_eval'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/builder.rb:51:in `initialize'
+	from /home/jiayu/Documents/GARS/config.ru:1:in `new'
+	from /home/jiayu/Documents/GARS/config.ru:1:in `<main>'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/thin-1.3.1/lib/rack/adapter/loader.rb:36:in `eval'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/thin-1.3.1/lib/rack/adapter/loader.rb:36:in `load'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/thin-1.3.1/lib/rack/adapter/loader.rb:45:in `for'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/thin-1.3.1/lib/thin/controllers/controller.rb:169:in `load_adapter'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/thin-1.3.1/lib/thin/controllers/controller.rb:73:in `start'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/thin-1.3.1/lib/thin/runner.rb:185:in `run_command'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/thin-1.3.1/lib/thin/runner.rb:151:in `run!'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/thin-1.3.1/bin/thin:6:in `<top (required)>'
+	from /usr/local/bin/thin:19:in `load'
+	from /usr/local/bin/thin:19:in `<main>'
+>> Writing PID to tmp/pids/thin.8000.pid
+>> Using rack adapter
+>> Exiting!
+/home/jiayu/Documents/GARS/config/environments/development.rb:4:in `block in <top (required)>': uninitialized constant SSL (NameError)
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/railtie/configurable.rb:24:in `class_eval'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/railtie/configurable.rb:24:in `configure'
+	from /home/jiayu/Documents/GARS/config/environments/development.rb:2:in `<top (required)>'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/engine.rb:539:in `block in <class:Engine>'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/initializable.rb:30:in `instance_exec'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/initializable.rb:30:in `run'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/initializable.rb:55:in `block in run_initializers'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/initializable.rb:54:in `each'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/initializable.rb:54:in `run_initializers'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/application.rb:96:in `initialize!'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/railtie/configurable.rb:30:in `method_missing'
+	from /home/jiayu/Documents/GARS/config/environment.rb:5:in `<top (required)>'
+	from /home/jiayu/Documents/GARS/config.ru:3:in `require'
+	from /home/jiayu/Documents/GARS/config.ru:3:in `block in <main>'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/builder.rb:51:in `instance_eval'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/builder.rb:51:in `initialize'
+	from /home/jiayu/Documents/GARS/config.ru:1:in `new'
+	from /home/jiayu/Documents/GARS/config.ru:1:in `<main>'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/thin-1.3.1/lib/rack/adapter/loader.rb:36:in `eval'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/thin-1.3.1/lib/rack/adapter/loader.rb:36:in `load'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/thin-1.3.1/lib/rack/adapter/loader.rb:45:in `for'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/thin-1.3.1/lib/thin/controllers/controller.rb:169:in `load_adapter'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/thin-1.3.1/lib/thin/controllers/controller.rb:73:in `start'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/thin-1.3.1/lib/thin/runner.rb:185:in `run_command'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/thin-1.3.1/lib/thin/runner.rb:151:in `run!'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/thin-1.3.1/bin/thin:6:in `<top (required)>'
+	from /usr/local/bin/thin:19:in `load'
+	from /usr/local/bin/thin:19:in `<main>'
+>> Writing PID to tmp/pids/thin.8000.pid
+>> Using rack adapter
+>> Thin web server (v1.3.1 codename Triple Espresso)
+>> Maximum connections set to 1024
+>> Listening on 0.0.0.0:8000, CTRL+C to stop
+/home/jiayu/Documents/GARS/app/controllers/assign_review_controller.rb:53: warning: block supersedes default value argument
+/home/jiayu/Documents/GARS/app/controllers/assign_review_controller.rb:54: warning: block supersedes default value argument
+/home/jiayu/Documents/GARS/app/controllers/assign_review_controller.rb:123: warning: block supersedes default value argument
+/home/jiayu/Documents/GARS/app/controllers/assign_review_controller.rb:53: warning: block supersedes default value argument
+/home/jiayu/Documents/GARS/app/controllers/assign_review_controller.rb:54: warning: block supersedes default value argument
+/home/jiayu/Documents/GARS/app/controllers/assign_review_controller.rb:123: warning: block supersedes default value argument
+<SSL_incomp>

@@ -113,6 +113,7 @@ DEPENDENCIES
   jquery-rails
   minitest
   mysql2
+  rack-ssl
   rubyzip
   sass-rails (~> 3.1.4)
   thin

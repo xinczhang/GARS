@@ -5,8 +5,8 @@ skip_before_filter :authorize, :only => [:index, :login]
   #front page, view all applications or assigned to user
   def view
 	#dummy the paginate here
-        auto_assign = params[:auto_assign] || 1  
-        if auto_assign.to_i() == 1
+        @auto_assign = params[:auto_assign] || 1  
+        if @auto_assign.to_i == 1
                 @applications = select_application
                 @reviewers = User.paginate :page => params[:review_page], :per_page => 5
                 @manual_assign_btn_visible = false
@@ -66,6 +66,9 @@ skip_before_filter :authorize, :only => [:index, :login]
 	end	
 	joins = @is_admin ? [:apply_yourself, :official_test_score] : [:apply_yourself, :official_test_score, :users]
 	conditions = @is_admin ? "" : "users.id = #{session[:current_user]}"
+	if (@is_admin) && (@auto_assign == 0)
+		conditions += "applications.assigned = 0 AND applications.status = 0"
+	end
 	#construct conditions sql segment by what in the filter form
 	if (!crta[:filterQuery].nil?) 
 		for i in 0..crta[:filterQuery][:types].length - 1

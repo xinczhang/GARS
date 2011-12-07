@@ -36,7 +36,7 @@ HTML
 			</select>					
 			<input type='submit' class='jqBtn'/>
 DIV
-	html << form_tag('/assign_review/auto_assign', :id => 'assign-reviews-form', :method => :post) do 
+	html << form_tag('/assign_review/auto_assign', :id => 'auto-assign-reviews-form', :method => :post) do 
 				inside_div.html_safe 
 			end
 	html << "</div>"
